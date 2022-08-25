@@ -78,7 +78,7 @@ export default {
 <style lang="scss" scoped>
   #app{
     box-sizing: border-box;
-    padding: 0rem .8rem 0rem .8rem;
+    padding: 0rem .8rem .5rem .8rem;
     margin: 0px;
     background-image: url("@/assets/img-fundo/fundo3.png");
     background-repeat: no-repeat;
@@ -99,7 +99,7 @@ export default {
       
     }
     #projetos__app{
-      padding: .5rem 2rem .5rem 2rem;
+      padding: .5rem 20rem .5rem 20rem;
 
     }
     #form__app{
@@ -107,7 +107,7 @@ export default {
 
     }
     #footer_app{
-      padding: .5rem .5rem .5rem 0.5rem;
+      padding: .5rem .5rem .5rem .5rem;
       
     }
     .points{

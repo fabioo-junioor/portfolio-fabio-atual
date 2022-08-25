@@ -89,7 +89,7 @@ export default {
     }
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
     #form{       
         border-radius: 10px;
         padding: 10px 10px;

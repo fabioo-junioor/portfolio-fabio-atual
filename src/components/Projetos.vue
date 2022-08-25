@@ -5,8 +5,8 @@
         <v-divider></v-divider>
     </div>
     <div id="projetos__imgs">
-        <v-card v-for="proj in projects"
-        :key="proj"
+        <v-card v-for="(proj, i) in projects"
+        :key="i" v-show="i < qtd"
         class="mx-auto"
         max-width="300"
         elevation="6">
@@ -38,94 +38,112 @@
             </v-card-subtitle>
         </v-card>
     </div>
+    <div id="verMais">
+        <v-btn @click="verMais()">Ver mais
+        </v-btn>
+    </div>
   </div>
 </template>
 <script>
 export default {
   data() {
     return {
-      projects: [
-        {
-          title: "Alquimia Skate Shop",
-          techs: {
-            tech1: "Wordpress",
-            tech2: "Woocommerce",
-            tech3: "Elementor",
-            tech4: "CSS",
-          },
-          tipo: "Ecommerce",
-          link: "https://alquimiaskateshop.com.br/",
-          src: require("../assets/img-projetos/alquimiaskateshop.png"),
-        },
-        {
-          title: "Ecológica Junior",
-          techs: {
-            tech1: "Wordpress",
-            tech2: "Elementor",
-            tech3: "CSS"
-          },
-          tipo: "Site Institucional",
-          src: require("../assets/img-projetos/ecologicajr.png"),
-        },
-        {
-          title: "F5 Junior",
-          techs: {
-            tech1: "Wordpress",
-            tech2: "Elementor",
-            tech3: "CSS",
-          },
-          tipo: "Site Institucional",
-          link: "https://f5jr.com/",
-          src: require("../assets/img-projetos/f5junior.png"),
-        },
-        {
-          title: "Fejers",
-          techs: {
-            tech1: "Wordpress",
-            tech2: "Elementor",
-            tech3: "CSS",
-          },
-          tipo: "Site Institucional",
-          link: "https://fejers.org.br/",
-          src: require("../assets/img-projetos/fejers.png"),
-        },
-        {
-          title: "Nepelin",
-          techs: {
-            tech1: "Wordpress",
-            tech2: "Elementor",
-            tech3: "CSS",
-          },
-          tipo: "Site Institucional",
-          link: "https://nepelin.com/",
-          src: require("../assets/img-projetos/nepelin.png"),
-        },
-        {
-          title: "Nucleo Impulso",
-          techs: {
-            tech1: "Wordpress",
-            tech2: "Elementor",
-            tech3: "CSS",
-          },
-          tipo: "Site Institucional",
-          link: "",
-          src: require("../assets/img-projetos/nucleo-impulso-site.png"),
-        },
-        {
-          title: "Portfólio",
-          techs: {
-            tech1: "Vue JS",
-            tech2: "Vuetify",
-            tech3: "SCSS",
-            tech4: "Animate.css"
-          },
-          tipo: "Site Pessoal",
-          link: "http://fabioo-junioor.github.io/",
-          src: require("../assets/img-projetos/portfolio.png"),
-        },
-      ],
+        qtd: 3,
+        projects: [
+            {
+            id: 1,
+            title: "Alquimia Skate Shop",
+            techs: {
+                tech1: "Wordpress",
+                tech2: "Woocommerce",
+                tech3: "Elementor",
+                tech4: "CSS",
+            },
+            tipo: "Ecommerce",
+            link: "https://alquimiaskateshop.com.br/",
+            src: require("../assets/img-projetos/alquimiaskateshop.png"),
+            },
+            {
+            id: 2,
+            title: "Ecológica Junior",
+            techs: {
+                tech1: "Wordpress",
+                tech2: "Elementor",
+                tech3: "CSS"
+            },
+            tipo: "Site Institucional",
+            src: require("../assets/img-projetos/ecologicajr.png"),
+            },
+            {
+            id: 3,
+            title: "F5 Junior",
+            techs: {
+                tech1: "Wordpress",
+                tech2: "Elementor",
+                tech3: "CSS",
+            },
+            tipo: "Site Institucional",
+            link: "https://f5jr.com/",
+            src: require("../assets/img-projetos/f5junior.png"),
+            },
+            {
+            id: 4,
+            title: "Fejers",
+            techs: {
+                tech1: "Wordpress",
+                tech2: "Elementor",
+                tech3: "CSS",
+            },
+            tipo: "Site Institucional",
+            link: "https://fejers.org.br/",
+            src: require("../assets/img-projetos/fejers.png"),
+            },
+            {
+            id: 5,
+            title: "Nepelin",
+            techs: {
+                tech1: "Wordpress",
+                tech2: "Elementor",
+                tech3: "CSS",
+            },
+            tipo: "Site Institucional",
+            link: "https://nepelin.com/",
+            src: require("../assets/img-projetos/nepelin.png"),
+            },
+            {
+            id: 6,
+            title: "Nucleo Impulso",
+            techs: {
+                tech1: "Wordpress",
+                tech2: "Elementor",
+                tech3: "CSS",
+            },
+            tipo: "Site Institucional",
+            link: "",
+            src: require("../assets/img-projetos/nucleo-impulso-site.png"),
+            },
+            {
+            id: 7,
+            title: "Portfólio",
+            techs: {
+                tech1: "Vue JS",
+                tech2: "Vuetify",
+                tech3: "SCSS",
+                tech4: "Animate.css"
+            },
+            tipo: "Site Pessoal",
+            link: "http://fabioo-junioor.github.io/",
+            src: require("../assets/img-projetos/portfolio.png"),
+            },
+        ],
     };
   },
+  methods:{
+    verMais(){
+        console.log("Clicou");
+        this.qtd += 3
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>
@@ -163,13 +181,14 @@ export default {
         #projetos__imgs{
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-evenly;
             width: 100%;
 
             .v-card{ 
                 margin: .5rem;
                 padding: 5px;
-                background-color: #252d36;                
+                background-color: #252d36;
+                box-shadow: 0px 0px 6px black;               
                 
                 .v-card__title{
                     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -181,7 +200,6 @@ export default {
 
                 }
                 .v-card__subtitle{
-                    //background-color: blue;
                     padding: 5px 0px 0px 10px;
                     width: 100%;
                     display: flex;
@@ -199,7 +217,6 @@ export default {
 
                     }
                     .techs{
-                        //background-color: greenyellow;
                         width: 100%;
                         display: flex;
                         flex-wrap: wrap;
@@ -214,6 +231,7 @@ export default {
                             padding: 7px;
                             border-radius: 10px;
                             border: 2px solid black;
+                            box-shadow: 0px 0px 5px black;
                         }
                     }
                     hr{
@@ -228,6 +246,7 @@ export default {
                             a{
                                 text-decoration: none;
                                 color: white;
+                                font-size: .9rem;
                             }
                         }
                     }
@@ -248,6 +267,18 @@ export default {
         
                 }
             }
+        }
+    }
+    #verMais{
+        margin-top: 1.5rem;
+        
+        .v-btn{
+            background-color: #6b03c0;
+            padding: 25px 50px;
+            color: white;
+            font-size: 1rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            box-shadow: 2px 2px 5px black;
         }
     }
 
@@ -274,12 +305,16 @@ export default {
         }
     }
     @media only screen and (max-width: 481px){
-       h2{
+        #projetos__imgs{
+            width: 100% !important;
+
+        }
+        h2{
             font-size: 2rem !important;
             
         }
         .v-card{
-            max-width: 200px !important;
+            max-width: 210px !important;
             margin: .5rem .2rem !important;
 
         }

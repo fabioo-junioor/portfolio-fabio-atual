@@ -46,7 +46,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .v-toolbar__content {
     width: 100%;
     display: flex;

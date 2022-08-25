@@ -30,7 +30,7 @@ export default {
             techs: [
                 { title: 'Linguagem C', level: '4 de 5', src: require('../assets/img-tools/c.png')},
                 { title: 'HTML5', level: '4 de 5', src: require('../assets/img-tools/html5.png')},
-                { title: 'CSS3', level: '3 de 5', src: require('../assets/img-tools/css-3.png')},
+                { title: 'CSS3', level: '4 de 5', src: require('../assets/img-tools/css-3.png')},
                 { title: 'JavaScript', level: '2 de 5', src: require('../assets/img-tools/javascript.png')},
                 { title: 'Bootstrap', level: '3 de 5', src: require('../assets/img-tools/bootstrap.png')},
                 { title: 'VueJs', level: '2 de 5', src: require('../assets/img-tools/vue-js.png')},
@@ -47,7 +47,7 @@ export default {
     }
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
     #tecnologia{
         display: flex;
         flex-direction: column;
@@ -90,7 +90,6 @@ export default {
                 align-items: center;
                 margin: 20px 10px;
                 padding: 2rem 3rem;
-                //background-color: #252831;
                 background-color: #252d36;
                 box-shadow: 0px 0px 15px #6b03c0;
                 border: 1px solid #6b03c0;
@@ -159,9 +158,13 @@ export default {
             
         }
         .v-card{
-            margin: 5px 0px !important;
+            margin: 5px 5px !important;
             padding: .8rem .5rem !important;
             max-width: 100px !important;
+            
+        }
+        .v-card__subtitle{
+            font-size: .6rem !important;
             
         }
     }
