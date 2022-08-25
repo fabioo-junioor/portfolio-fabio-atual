@@ -30,14 +30,13 @@ export default {
         }
     }}
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
     #servicos{
         display: flex;
         flex-direction: column;
         align-items: center;        
         border-radius: 10px;
         padding: 50px 0px;
-        //background-color: #2f3340;
         background: #485563;
         background: -webkit-linear-gradient(to bottom, #29323c, #485563);
         background: linear-gradient(to bottom, #29323c, #485563);

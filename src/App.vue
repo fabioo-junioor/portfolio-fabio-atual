@@ -29,13 +29,19 @@
       <v-divider></v-divider>
       <v-divider></v-divider>
       <v-divider></v-divider>
+    </div>
+    <div id="projetos__app">
+      <Projetos/>
+    </div>
+    <div class="points">
+      <v-divider></v-divider>
+      <v-divider></v-divider>
+      <v-divider></v-divider>
     </div><!--
     <div id="form__app">
       <Form/>
     </div>
     <div class="points">
-      <v-divider></v-divider>
-      <v-divider></v-divider>
       <v-divider></v-divider>
       <v-divider></v-divider>
       <v-divider></v-divider>
@@ -52,11 +58,20 @@ import Sobre from './components/Sobre.vue'
 import Tecnologias from './components/Tecnologias.vue'
 import Servicos from './components/Servicos.vue'
 import Form from './components/Form.vue'
+import Projetos from './components/Projetos.vue'
 import Footer from './components/Footer.vue'
 
 export default {
   name: "App",
-  components: {Menu, Sobre, Footer, Servicos, Form, Tecnologias}
+  components: {
+    Menu,
+    Sobre,
+    Tecnologias,
+    Servicos,
+    Projetos,
+    Form,
+    Footer
+  }
 
 }
 </script>
@@ -82,6 +97,10 @@ export default {
     #servicos__app{
       padding: .5rem 20rem .5rem 20rem;
       
+    }
+    #projetos__app{
+      padding: .5rem 2rem .5rem 2rem;
+
     }
     #form__app{
       padding: .5rem 35rem .5rem 35rem;
@@ -125,6 +144,10 @@ export default {
       padding: .5rem 10rem .5rem 10rem !important;
       
     }
+    #projetos__app{
+      padding: .5rem 2rem .5rem 2rem !important;
+
+    }
     #form__app{
       padding: .5rem 15rem .5rem 15rem !important;
 
@@ -146,6 +169,10 @@ export default {
     #servicos__app{
       padding: .5rem 5rem .5rem 5rem !important;
       
+    }
+    #projetos__app{
+      padding: .5rem 1rem .5rem 1rem !important;
+
     }
     #form__app{
       padding: .5rem 10rem .5rem 10rem !important;
@@ -169,6 +196,10 @@ export default {
       padding: .5rem 1.5rem .5rem 1.5rem !important;
       
     }
+    #projetos__app{
+      padding: .5rem 0rem .5rem 0rem !important;
+
+    }
     #form__app{
       padding: .5rem 3rem .5rem 3rem !important;
 
@@ -190,6 +221,10 @@ export default {
     #servicos__app{
       padding: .5rem 0rem .5rem 0rem !important;
       
+    }
+    #projetos__app{
+      padding: .5rem 0rem .5rem 0rem !important;
+
     }
     #form__app{
       padding: .5rem 0rem .5rem 0rem !important;

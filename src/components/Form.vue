@@ -86,7 +86,7 @@ export default {
         console.log("Conteudo: ", this.conteudo)
 
       }
-    },
+    }
 }
 </script>
 <style lang="scss">
