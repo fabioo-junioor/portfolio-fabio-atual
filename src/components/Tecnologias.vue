@@ -73,7 +73,7 @@ export default {
 
             }
             hr{
-                border: 2px solid white;
+                border: 1px solid white;
                 width: 25%;
 
             }

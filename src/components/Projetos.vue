@@ -188,7 +188,7 @@ export default {
                 margin: .5rem;
                 padding: 5px;
                 background-color: #252d36;
-                box-shadow: 0px 0px 6px black;               
+                box-shadow: 0px 0px 10px black;               
                 
                 .v-card__title{
                     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -211,7 +211,6 @@ export default {
                         font-size: .8rem;
                         color: rgba(255, 255, 255, 0.9);
                         font-weight: 500;
-                        //background-color: grey;
                         padding: 2px;
                         margin: 10px 0px;
 
@@ -314,7 +313,7 @@ export default {
             
         }
         .v-card{
-            max-width: 210px !important;
+            max-width: 190px !important;
             margin: .5rem .2rem !important;
 
         }

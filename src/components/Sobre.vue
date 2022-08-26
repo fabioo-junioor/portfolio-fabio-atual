@@ -54,10 +54,14 @@ export default {
                 filter: drop-shadow(2px 2px 0px rgb(0, 0, 0));
 
             }
+            #foto-logo:hover{
+                filter: blur(1px);
+
+            }
             #foto-eu{
                 width: 300px;
                 border-radius: 100%;
-                border: 15px solid #6b03c0;
+                border: 10px solid #6b03c0;
 
             }
             h2{

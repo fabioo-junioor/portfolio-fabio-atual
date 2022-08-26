@@ -57,8 +57,8 @@ import Menu from './components/Menu.vue'
 import Sobre from './components/Sobre.vue'
 import Tecnologias from './components/Tecnologias.vue'
 import Servicos from './components/Servicos.vue'
-import Form from './components/Form.vue'
 import Projetos from './components/Projetos.vue'
+import Form from './components/Form.vue'
 import Footer from './components/Footer.vue'
 
 export default {
