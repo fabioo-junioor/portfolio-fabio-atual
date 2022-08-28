@@ -43,15 +43,18 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-    .v-footer{
+    @import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@500&family=Rampart+One&display=swap');    .v-footer{
         padding: 3rem 0 .5rem 0;
         display: flex;
         justify-content: center;
         border-radius: 10px;
-        //background-color: #2f3340;
-        background: #485563;
-        background: -webkit-linear-gradient(to bottom, #485563, #29323c);
-        background: linear-gradient(to bottom, #485563, #29323c);
+        border-top: 1px solid rgba(153, 153, 153, 0.5);
+        border-right: 1px solid rgba(0, 0, 0, 0.5);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        border-left: 1px solid rgba(153, 153, 153, 0.5);
+        background-color: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(6px);
+        box-shadow: 0px 0px 5px black;
         
         .v-card{
             background-color: transparent;
@@ -79,7 +82,7 @@ export default {
                         font-size: 3.5rem !important;
                     }
                     .v-icon:hover{
-                        filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+                        filter: drop-shadow(0px 0px 1px rgb(255, 255, 255));
 
                     }            
                 }
@@ -93,17 +96,17 @@ export default {
             }
             .v-card__text h4{
                 color: white;
-                font-size: .8rem;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: .9rem;
+                font-family: 'Anek Telugu', sans-serif;
 
             }
             #email{
                 padding: 5px;
-                font-size: .9rem;
-                color: rgba(255, 255, 255, 0.9);
+                font-size: 1rem;
+                color: rgba(255, 255, 255);
 
                 span{
-                    font-size: 1rem;
+                    font-size: 1.1rem;
                     color: white;
 
                 }

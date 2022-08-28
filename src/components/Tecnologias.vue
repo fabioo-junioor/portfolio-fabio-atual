@@ -30,7 +30,7 @@ export default {
             techs: [
                 { title: 'Linguagem C', level: '4 de 5', src: require('../assets/img-tools/c.png')},
                 { title: 'HTML5', level: '4 de 5', src: require('../assets/img-tools/html5.png')},
-                { title: 'CSS3', level: '4 de 5', src: require('../assets/img-tools/css-3.png')},
+                { title: 'CSS3', level: '3 de 5', src: require('../assets/img-tools/css-3.png')},
                 { title: 'JavaScript', level: '2 de 5', src: require('../assets/img-tools/javascript.png')},
                 { title: 'Bootstrap', level: '3 de 5', src: require('../assets/img-tools/bootstrap.png')},
                 { title: 'VueJs', level: '2 de 5', src: require('../assets/img-tools/vue-js.png')},
@@ -40,6 +40,7 @@ export default {
                 { title: 'Mysql', level: '4 de 5', src: require('../assets/img-tools/mysql.png')},
                 { title: 'Scrum', level: '4 de 5', src: require('../assets/img-tools/scrum.png')},
                 { title: 'PHP', level: '1 de 5', src: require('../assets/img-tools/php.png')},
+                //{ title: 'Nuxt Js', level: '1 de 5', src: require('../assets/img-tools/nuxt-js.png')},
                 //{ title: 'Flutter', level: '0 de 5', src: require('../assets/img-tools/flutter.png')},
                 { title: 'Java', level: '1 de 5', src: require('../assets/img-tools/java.png')}
             ]            
@@ -48,15 +49,20 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+    @import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@500&family=Rampart+One&display=swap');
     #tecnologia{
         display: flex;
         flex-direction: column;
         align-items: center;        
-        border-radius: 10px;
+        border-radius: 20px;
         padding: 50px 0px;
-        background: #485563;
-        background: -webkit-linear-gradient(to bottom, #29323c, #485563);
-        background: linear-gradient(to bottom, #29323c, #485563);
+        border-top: 1px solid rgba(153, 153, 153, 0.5);
+        border-right: 1px solid rgba(0, 0, 0, 0.5);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        border-left: 1px solid rgba(153, 153, 153, 0.5);
+        background-color: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(6px);
+        box-shadow: 0px 0px 5px black;
 
         #title{
             display: flex;
@@ -67,9 +73,9 @@ export default {
 
             h2{
                 font-size: 3rem;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-family: 'Rampart One', cursive;
                 font-weight: 500;
-                color: rgba(255, 255, 255, 0.9);
+                color: rgba(255, 255, 255);
 
             }
             hr{
@@ -90,16 +96,16 @@ export default {
                 align-items: center;
                 margin: 20px 10px;
                 padding: 2rem 3rem;
-                background-color: #252d36;
-                box-shadow: 0px 0px 15px #6b03c0;
-                border: 1px solid #6b03c0;
+                background-color: rgba(107, 3, 192,  0.1);
+                box-shadow: 0px 0px 5px black;
+                border: 2px solid rgba(0, 0, 0);
     
                 .v-card__subtitle{
                     width: 100%;
                     text-align: center;
-                    color: rgba(255, 255, 255, 0.9);
-                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                    font-size: .8rem;
+                    color: rgba(255, 255, 255);
+                    font-family: 'Anek Telugu', sans-serif;
+                    font-size: .9rem;
                     font-weight: 500;
                     padding: 5px 0px 0px 0px;
     

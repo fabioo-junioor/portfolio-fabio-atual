@@ -11,7 +11,7 @@
         </v-container>
         <v-container>
             <h2 class="animate__animated animate__flipInX">
-                From the next step
+               &lsaquo;from the next step /&rsaquo;
             </h2>
             <p class="animate__animated animate__flipInX">
                 Meu nome é Fábio estou cursando
@@ -31,6 +31,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+    @import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@500&family=Rampart+One&display=swap');
     #sobre{
         display: flex;
         flex-direction: column;
@@ -38,10 +39,14 @@ export default {
         align-items: center;
         width: 100%;
         padding: 0px 0px 100px 0px;
-        border-radius: 10px;
-        background: #485563;
-        background: -webkit-linear-gradient(to bottom, #29323c, #485563);
-        background: linear-gradient(to bottom, #29323c, #485563);
+        border-radius: 20px;        
+        border-top: 1px solid rgba(153, 153, 153, 0.5);
+        border-right: 1px solid rgba(0, 0, 0, 0.5);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        border-left: 1px solid rgba(153, 153, 153, 0.5);
+        background-color: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(6px);
+        box-shadow: 0px 0px 5px black;
 
         .container{
             display: flex;
@@ -54,10 +59,6 @@ export default {
                 filter: drop-shadow(2px 2px 0px rgb(0, 0, 0));
 
             }
-            #foto-logo:hover{
-                filter: blur(1px);
-
-            }
             #foto-eu{
                 width: 300px;
                 border-radius: 100%;
@@ -65,20 +66,19 @@ export default {
 
             }
             h2{
-                color: rgba(255, 255, 255, 0.9);
-                font-size: 4rem;
+                color: rgb(255, 255, 255);
+                font-size: 3.8rem;
                 font-weight: 500;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-family: 'Rampart One', cursive;
                 margin-bottom: 10px;
                 text-align: center;
 
             }
             p{
-                color: rgba(255, 255, 255, 0.8);
+                color: rgba(255, 255, 255, .9);
                 padding: 0rem 8rem 1rem 8rem;
-                font-size: .9rem;
-                font-weight: 400;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 1rem;
+                font-family: 'Anek Telugu', sans-serif;
                 text-align: center;
 
             }

@@ -1,10 +1,9 @@
 <template lang="js">
   <div id="app">
     <div id="sobre__app">
-      <Sobre/>
+      <Sobre />
     </div>
     <div class="points">
-      <v-divider></v-divider>
       <v-divider></v-divider>
       <v-divider></v-divider>
       <v-divider></v-divider>
@@ -18,13 +17,11 @@
       <v-divider></v-divider>
       <v-divider></v-divider>
       <v-divider></v-divider>
-      <v-divider></v-divider>
     </div>
     <div id="servicos__app">
       <Servicos/>
     </div>
     <div class="points">
-      <v-divider></v-divider>
       <v-divider></v-divider>
       <v-divider></v-divider>
       <v-divider></v-divider>
@@ -119,8 +116,8 @@ export default {
       hr{
         margin: .5rem 0rem;
         border-radius: 50%;
-        border: 7px solid #485563;
-        box-shadow: 0px 0px 10px rgb(0, 0, 0);
+        border: 7px solid #6b03c0;
+        box-shadow: 0px 0px 5px black;
         width: 10px;
       }
     }

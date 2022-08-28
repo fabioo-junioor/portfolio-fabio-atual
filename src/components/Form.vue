@@ -34,7 +34,7 @@
                             :rules="regrasConteudo"
                             filled
                             auto-grow
-                            :counter="1000"
+                            :counter="500"
                             name="input-7-1"
                             label="Conteudo" required>
                         </v-textarea>
@@ -74,7 +74,7 @@ export default {
             conteudo: '',
                 regrasConteudo: [
                     v => !!v || 'Campo conteudo vazio',
-                    v => v.length <= 1000 || ' Conteudo maior que 1000 caracteres',
+                    v => v.length <= 500 || ' Conteudo maior que 1000 caracteres',
             ],
         }
     },
@@ -90,13 +90,18 @@ export default {
 }
 </script>
 <style lang="scss">
+    @import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@500&family=Rampart+One&display=swap');
     #form{       
         border-radius: 10px;
         padding: 10px 10px;
-        background: #485563;
-        background: -webkit-linear-gradient(to bottom, #29323c, #485563);
-        background: linear-gradient(to bottom, #29323c, #485563);
-
+        border-top: 1px solid rgba(153, 153, 153, 0.5);
+        border-right: 1px solid rgba(0, 0, 0, 0.5);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        border-left: 1px solid rgba(153, 153, 153, 0.5);
+        background-color: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 0px 5px black;
+        
     }
     #form{
         .v-input__slot::before{
@@ -109,41 +114,45 @@ export default {
         }
         label{
             color: white;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-size: .9rem;
+            font-family: 'Anek Telugu', sans-serif;
+            font-size: 1rem;
 
         }
         #conteudo .v-input__slot{
-            background-color: #252d3669;
+            background-color: rgba(0, 0, 0, 0.2);
 
         }
         input, textarea{
             color: white;
             border-color: white;
-            font-size: 1rem;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1.1rem;
+            font-family: 'Anek Telugu', sans-serif;
 
         }
         .v-messages, .v-counter{
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family: 'Anek Telugu', sans-serif;
             color: white;
-            font-weight: 500;
 
         }
         .v-messages{
             color: rgba(255, 0, 0);
-            font-size: .8rem;
+            font-size: .9rem;
 
         }
         .v-btn{
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            background-color: #252d36;
+            font-family: 'Anek Telugu', sans-serif;
+            background-color: #6b03c0;
             box-shadow: 2px 2px 7px black;
             color: white;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             width: 100%;
             height: 4rem;
 
+            &:disabled{
+                background-color: #3d3d3d79 !important;
+                color: rgba(255, 255, 255, 0.7) !important;
+
+            }
         }
     }
 </style>

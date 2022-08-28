@@ -9,7 +9,8 @@
                 class="mx-auto" max-width="350"
                 elevation="6">
                 <v-img v-bind:src="service.src"
-                    class="white--text align-end" 
+                    class="white--text align-end"
+                    max-width="300"
                     contain></v-img>
                 <v-card-subtitle class="pb-0">
                     {{service.title}}
@@ -31,15 +32,20 @@ export default {
     }}
 </script>
 <style lang="scss" scoped>
+    @import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@500&family=Rampart+One&display=swap');
     #servicos{
         display: flex;
         flex-direction: column;
         align-items: center;        
-        border-radius: 10px;
+        border-radius: 20px;
         padding: 50px 0px;
-        background: #485563;
-        background: -webkit-linear-gradient(to bottom, #29323c, #485563);
-        background: linear-gradient(to bottom, #29323c, #485563);
+        border-top: 1px solid rgba(153, 153, 153, 0.5);
+        border-right: 1px solid rgba(0, 0, 0, 0.5);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        border-left: 1px solid rgba(153, 153, 153, 0.5);
+        background-color: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(6px);
+        box-shadow: 0px 0px 5px black;
 
         #title{
             display: flex;
@@ -50,9 +56,9 @@ export default {
 
             h2{
                 font-size: 3rem;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-family: 'Rampart One', cursive;
                 font-weight: 500;
-                color: rgba(255, 255, 255, 0.9);
+                color: rgba(255, 255, 255);
 
             }
             hr{
@@ -73,15 +79,16 @@ export default {
                 align-items: center;
                 margin: 1rem 1rem;
                 padding: 1rem 1rem;
-                background-color: #252d36;
+                background-color: rgba(107, 3, 192,  0.1);
                 box-shadow: 0px 0px 10px black;
+                border: 2px solid rgba(0, 0, 0);
     
                 .v-card__subtitle{
                     width: 100%;
                     text-align: center;
-                    color: rgba(255, 255, 255, 0.9);
-                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                    font-size: 1rem;
+                    color: rgba(255, 255, 255);
+                    font-family: 'Anek Telugu', sans-serif;
+                    font-size: 1.1rem;
                     font-weight: 500;
     
                 }               

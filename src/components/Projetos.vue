@@ -147,16 +147,22 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+    @import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@500&family=Rampart+One&display=swap');
     #projetos {
         display: flex;
         flex-direction: column;
         align-items: center;        
-        border-radius: 10px;
+        border-radius: 20px;
         padding: 50px 0px;
         width: 100%;
-        background: #485563;
-        background: -webkit-linear-gradient(to bottom, #29323c, #485563);
-        background: linear-gradient(to bottom, #29323c, #485563);
+        border-top: 1px solid rgba(153, 153, 153, 0.5);
+        border-right: 1px solid rgba(0, 0, 0, 0.5);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+        border-left: 1px solid rgba(153, 153, 153, 0.5);
+        background-color: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(6px);
+        box-shadow: 0px 0px 5px black;
+
 
         #title{
             display: flex;
@@ -167,9 +173,9 @@ export default {
 
             h2{
                 font-size: 3rem;
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-family: 'Rampart One', cursive;
                 font-weight: 500;
-                color: rgba(255, 255, 255, 0.9);
+                color: rgba(255, 255, 255);
 
             }
             hr{
@@ -187,16 +193,17 @@ export default {
             .v-card{ 
                 margin: .5rem;
                 padding: 5px;
-                background-color: #252d36;
-                box-shadow: 0px 0px 10px black;               
+                background-color: rgba(107, 3, 192,  0.1);
+                box-shadow: 0px 0px 10px black;
+                border: 2px solid rgba(0, 0, 0);               
                 
                 .v-card__title{
-                    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                    font-size: 1rem;
+                    font-family: 'Anek Telugu', sans-serif;
+                    font-size: 1.1rem;
                     width: 100%;
                     padding: 10px 5px 5px 10px;
-                    color: rgba(255, 255, 255, 0.9);
-                    text-decoration: underline 2px;
+                    color: rgba(255, 255, 255);
+                    text-decoration: underline 1px;
 
                 }
                 .v-card__subtitle{
@@ -206,9 +213,8 @@ export default {
                     flex-direction: column;
 
                     .tipo, .techs, .links{
-                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                        font-weight: 400;
-                        font-size: .8rem;
+                        font-family: 'Anek Telugu', sans-serif;
+                        font-size: .9rem;
                         color: rgba(255, 255, 255, 0.9);
                         font-weight: 500;
                         padding: 2px;
@@ -223,14 +229,15 @@ export default {
 
                         p{
                             color: white;
-                            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                            font-size: .8rem;
-                            font-weight: 500;
+                            font-family: 'Anek Telugu', sans-serif;
+                            font-size: .9rem;
                             margin: 1px;
-                            padding: 7px;
+                            padding: 7px 5px;
                             border-radius: 10px;
+                            background-color: #6b03c0;
                             border: 2px solid black;
-                            box-shadow: 0px 0px 5px black;
+                            box-shadow: 0px 0px 7px black;
+
                         }
                     }
                     hr{
@@ -240,13 +247,21 @@ export default {
                     }
                     .links{
                         .v-btn{
+                            font-family: 'Anek Telugu', sans-serif;
+                            font-size: 1rem;
                             background-color: #6b03c0;
-                            box-shadow: 2px 2px 5px black;
+                            box-shadow: 3px 3px 2px black;
+
                             a{
                                 text-decoration: none;
                                 color: white;
                                 font-size: .9rem;
+                                
                             }
+                        }
+                        .v-btn:disabled{
+                            background-color: #3d3d3d79 !important;
+
                         }
                     }
 
@@ -275,9 +290,10 @@ export default {
             background-color: #6b03c0;
             padding: 25px 50px;
             color: white;
-            font-size: 1rem;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            box-shadow: 2px 2px 5px black;
+            font-size: 1.1rem;
+            font-family: 'Anek Telugu', sans-serif;
+            box-shadow: 3px 3px 2px black;
+            
         }
     }
 
