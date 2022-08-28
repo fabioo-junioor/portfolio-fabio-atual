@@ -1,4 +1,4 @@
-<template>
+<template lang="js">
   <div id="app">
     <div id="sobre__app">
       <Sobre/>
@@ -127,6 +127,24 @@ export default {
   }
 
 /*################################################*/
+  @media only screen and (max-width: 1560px){
+    #app{
+      padding: 0rem .3rem 0rem .3rem;
+    
+    }
+    #sobre__app{
+      padding: 5rem 25rem .5rem 25rem !important;
+      
+    }
+    #servicos__app{
+      padding: .5rem 15rem .5rem 15rem !important;
+      
+    }
+    #projetos__app{
+      padding: .5rem 10rem .5rem 10rem !important;
+
+    }
+  }
   @media only screen and (max-width: 1200px){
     #app{
       padding: 0rem .3rem 0rem .3rem;

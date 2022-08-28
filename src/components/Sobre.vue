@@ -91,13 +91,28 @@ export default {
     }
 
 /*#####################################################*/
+    @media only screen and (max-width: 1560px){
+        #foto-eu{
+            width: 200px !important;
+
+        }
+        h2{
+            font-size: 2.8rem !important;
+
+        }
+        p{
+            padding: 0rem 5rem 1rem 5rem !important;
+            font-size: .8rem !important;
+
+        }
+    }
     @media only screen and (max-width: 1200px){
         #foto-logo{
                 width: 250px !important;
 
         }
         #foto-eu{
-            width: 250px !important;
+            width: 230px !important;
             border: 10px solid #6b03c0 !important;
 
         }
