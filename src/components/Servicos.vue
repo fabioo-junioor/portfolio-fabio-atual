@@ -63,7 +63,8 @@ export default {
             }
             hr{
                 border: 1px solid white;
-                width: 25%;
+                border-radius: 10px;
+                width: 50%;
 
             }
         }
@@ -108,14 +109,21 @@ export default {
             max-width: 300px !important;
             margin: .5rem .5rem !important;
 
-        }
-        
+            .v-image{
+                max-width: 200px !important;
+
+            }
+        }        
     }
     @media only screen and (max-width: 720px){
         .v-card{
-            max-width: 170px !important;
+            max-width: 200px !important;
             margin: .2rem .4rem !important;
 
+            .v-image{
+                max-width: 150px !important;
+
+            }
         }
         .v-card__subtitle{
             font-size: .9rem !important;
@@ -129,8 +137,16 @@ export default {
         }
         .v-card{
             max-width: 150px !important;
-            margin: .5rem .5rem !important;
+            margin: .2rem .2rem !important;
 
+            .v-card__subtitle{
+                font-size: .8rem !important;
+
+            }
+            .v-image{
+                max-width: 130px !important;
+
+            }
         }
     }
 </style>

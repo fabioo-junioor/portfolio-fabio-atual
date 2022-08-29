@@ -84,7 +84,8 @@ export default {
             }
         }
         hr{
-            border: 2px solid white;
+            border: 3px solid white;
+            border-radius: 10px;
             width: 20%;
 
         }

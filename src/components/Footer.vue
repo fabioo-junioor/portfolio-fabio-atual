@@ -44,7 +44,7 @@ export default {
 </script>
 <style lang="scss" scoped>
     @import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@500&family=Rampart+One&display=swap');    .v-footer{
-        padding: 3rem 0 .5rem 0;
+        padding: 4rem 0rem .5rem 0rem;
         display: flex;
         justify-content: center;
         border-radius: 10px;
@@ -79,35 +79,37 @@ export default {
                     .v-icon{
                         color: #6b03c0;
                         filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.8));
-                        font-size: 3.5rem !important;
+                        font-size: 4rem !important;
                     }
                     .v-icon:hover{
-                        filter: drop-shadow(0px 0px 1px rgb(255, 255, 255));
+                        filter: drop-shadow(0px 0px 3px rgb(255, 255, 255));
 
                     }            
                 }
             }
             hr{
                 color: white;
-                width: 100%;
+                width: 50%;
                 border: 1px solid white;
-                margin: 3rem 0 .5rem 0;
+                margin: 4rem 0rem .5rem 0rem;
 
             }
             .v-card__text h4{
                 color: white;
                 font-size: .9rem;
                 font-family: 'Anek Telugu', sans-serif;
+                letter-spacing: 2px;
 
             }
             #email{
                 padding: 5px;
                 font-size: 1rem;
                 color: rgba(255, 255, 255);
-
+                
                 span{
                     font-size: 1.1rem;
                     color: white;
+                    letter-spacing: 1px;
 
                 }
             }

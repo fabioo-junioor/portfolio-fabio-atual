@@ -180,7 +180,8 @@ export default {
             }
             hr{
                 border: 1px solid white;
-                width: 25%;
+                border-radius: 10px;
+                width: 50%;
 
             }
         }
@@ -232,7 +233,7 @@ export default {
                             font-family: 'Anek Telugu', sans-serif;
                             font-size: .9rem;
                             margin: 1px;
-                            padding: 7px 5px;
+                            padding: 8px 5px 5px 5px;
                             border-radius: 10px;
                             background-color: #6b03c0;
                             border: 2px solid black;

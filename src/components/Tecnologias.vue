@@ -80,7 +80,8 @@ export default {
             }
             hr{
                 border: 1px solid white;
-                width: 25%;
+                border-radius: 10px;
+                width: 50%;
 
             }
         }
