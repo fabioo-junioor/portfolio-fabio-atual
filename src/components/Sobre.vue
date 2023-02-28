@@ -16,8 +16,7 @@
             <p class="animate__animated animate__flipInX">
                 Meu nome é Fábio estou cursando
                 Sistemas de Informação na Universidade Federal de Santa Maria, 
-                com uma ênfase pessoal em front-end 
-                nas tecnologias HTML, CSS, JAVASCRIPT, BOOTSTRAP, VUE.JS.
+                com uma ênfase pessoal em front-end.
             </p>
         </v-container>
         <v-divider></v-divider>

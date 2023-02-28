@@ -6,7 +6,7 @@
         </div>
         <div id="tech__imgs">
             <v-card v-for="tech in techs" :key="tech" 
-                class="mx-auto" max-width="200"
+                class="mx-auto" max-width="180"
                 elevation="4">
                 <v-img v-bind:src="tech.src"
                     class="white--text align-end" 
@@ -31,18 +31,17 @@ export default {
                 { title: 'Linguagem C', level: '4 de 5', src: require('../assets/img-tools/c.png')},
                 { title: 'HTML5', level: '4 de 5', src: require('../assets/img-tools/html5.png')},
                 { title: 'CSS3', level: '3 de 5', src: require('../assets/img-tools/css-3.png')},
-                { title: 'JavaScript', level: '2 de 5', src: require('../assets/img-tools/javascript.png')},
-                { title: 'Bootstrap', level: '3 de 5', src: require('../assets/img-tools/bootstrap.png')},
-                { title: 'VueJs', level: '2 de 5', src: require('../assets/img-tools/vue-js.png')},
+                { title: 'JavaScript', level: '3 de 5', src: require('../assets/img-tools/javascript.png')},
+                { title: 'Bootstrap', level: '4 de 5', src: require('../assets/img-tools/bootstrap.png')},
+                { title: 'VueJs', level: '3 de 5', src: require('../assets/img-tools/vue-js.png')},
                 { title: 'SASS', level: '3 de 5', src: require('../assets/img-tools/sass.png')},
-                { title: 'Vuetify', level: '2 de 5', src: require('../assets/img-tools/vuetify.png')},
-                { title: 'Wordpress', level: '4 de 5', src: require('../assets/img-tools/wordpress.png')},
                 { title: 'Mysql', level: '4 de 5', src: require('../assets/img-tools/mysql.png')},
+                { title: 'PHP', level: '2 de 5', src: require('../assets/img-tools/php.png')},
+                { title: 'Bootstrap-vue', level: '3 de 5', src: require('../assets/img-tools/bootstrap-vue.png')},
+                { title: 'Vuetify', level: '2 de 5', src: require('../assets/img-tools/vuetify.png')},
+                { title: 'Kotlin', level: '1 de 5', src: require('../assets/img-tools/kotlin.png')},
                 { title: 'Scrum', level: '4 de 5', src: require('../assets/img-tools/scrum.png')},
-                { title: 'PHP', level: '1 de 5', src: require('../assets/img-tools/php.png')},
-                //{ title: 'Nuxt Js', level: '1 de 5', src: require('../assets/img-tools/nuxt-js.png')},
-                //{ title: 'Flutter', level: '0 de 5', src: require('../assets/img-tools/flutter.png')},
-                { title: 'Java', level: '1 de 5', src: require('../assets/img-tools/java.png')}
+                { title: 'Wordpress', level: '4 de 5', src: require('../assets/img-tools/wordpress.png')}
             ]            
         }
     }

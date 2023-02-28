@@ -12,8 +12,8 @@
         elevation="6">
             <v-img v-bind:src="proj.src"
                 class="white--text"
-                cover max-width="300"
-                max-height="350">
+                cover max-width="auto"
+                max-height="400">
                 </v-img>
             <v-card-title class="pb-0">
                 {{ proj.title }}
@@ -124,6 +124,34 @@ export default {
             },
             {
             id: 7,
+            title: "HASupport",
+            techs: {
+                tech1: "HTML5",
+                tech2: "CSS3",
+                tech3: "JavaScript",
+                tech4: "Mysql",
+                tech5: "Bootstrap",
+                tech6: "Electron",
+            },
+            tipo: "Software Desktop",
+            link: "https://github.com/fabioo-junioor/HA--ASSIST",
+            src: require("../assets/img-projetos/ha-support.jpg"),
+            },
+            {
+            id: 8,
+            title: "Electoral Partials",
+            techs: {
+                tech1: "Kotlin",
+                tech2: "PHP",
+                tech3: "Java",
+                tech4: "Mysql"
+            },
+            tipo: "Aplicativo Mobile",
+            link: "https://github.com/fabioo-junioor/project-app-electoral-partials",
+            src: require("../assets/img-projetos/electoral-partials-tela1.png"),
+            },
+            {
+            id: 9,
             title: "Portfólio",
             techs: {
                 tech1: "Vue JS",
@@ -141,7 +169,7 @@ export default {
   methods:{
     verMais(){
         console.log("Clicou");
-        this.qtd += 3
+        this.qtd += 6
     }
   }
 };
@@ -196,15 +224,15 @@ export default {
                 padding: 5px;
                 background-color: rgba(107, 3, 192,  0.1);
                 box-shadow: 0px 0px 10px black;
-                border: 2px solid rgba(0, 0, 0);               
+                border: 2px solid rgba(0, 0, 0);
+                overflow: hidden;        
                 
                 .v-card__title{
                     font-family: 'Anek Telugu', sans-serif;
                     font-size: 1.1rem;
                     width: 100%;
-                    padding: 10px 5px 5px 10px;
+                    padding: 15px 5px 5px 10px;
                     color: rgba(255, 255, 255);
-                    text-decoration: underline 1px;
 
                 }
                 .v-card__subtitle{
@@ -268,16 +296,15 @@ export default {
 
                 } 
                 .v-image{
-                    overflow: hidden;
-                    -moz-transition: all 1.5s;
-                    -webkit-transition: all 1.5s;
-                    transition: all 1.5s;
+                    -moz-transition: all 1.2s;
+                    -webkit-transition: all 1.2s;
+                    transition: all 1.2s;
         
                 }
                 .v-image:hover{
-                    -moz-transform: scale(1.5);
-                    -webkit-transform: scale(1.5);
-                    transform: scale(1.5);
+                    -moz-transform: scale(1.1);
+                    -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
                     z-index: 1;
         
                 }

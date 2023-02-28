@@ -6,15 +6,11 @@
     <div class="points">
       <v-divider></v-divider>
       <v-divider></v-divider>
-      <v-divider></v-divider>
-      <v-divider></v-divider>
     </div>
     <div id="tech__app">
       <Tecnologias/>
     </div>
     <div class="points">
-      <v-divider></v-divider>
-      <v-divider></v-divider>
       <v-divider></v-divider>
       <v-divider></v-divider>
     </div>
@@ -24,8 +20,6 @@
     <div class="points">
       <v-divider></v-divider>
       <v-divider></v-divider>
-      <v-divider></v-divider>
-      <v-divider></v-divider>
     </div>
     <div id="projetos__app">
       <Projetos/>
@@ -33,16 +27,7 @@
     <div class="points">
       <v-divider></v-divider>
       <v-divider></v-divider>
-      <v-divider></v-divider>
-    </div><!--
-    <div id="form__app">
-      <Form/>
     </div>
-    <div class="points">
-      <v-divider></v-divider>
-      <v-divider></v-divider>
-      <v-divider></v-divider>
-    </div>-->
     <div id="footer__app">
       <Footer/>
     </div>
