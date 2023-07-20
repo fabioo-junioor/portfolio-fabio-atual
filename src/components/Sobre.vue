@@ -1,7 +1,8 @@
 <template>
     <div id="sobre">
+        <img src="../assets/img-logo/logo2.png" />
         <h1> &lsaquo;from the next step /&rsaquo;</h1>
-        <p>Meu nome é Fábio estou cursando Sistemas de Informação na Universidade Federal de Santa Maria, com uma ênfase pessoal em front-end.</p>
+        <p>Meu nome é Fábio estou cursando Sistemas de Informação na Universidade Federal de Santa Maria, com uma ênfase pessoal em desenvolvimento web front-end. Anteriormente a faculdade conclui alguns cursos como Técnico em Contabilidade pela Instituição Federal SulRiograndense (2015) e Técnico em Informática para Internet pela Colégio Técnico Industrial de Santa Maria (2017).</p>
     </div>
 </template>
 <script>
@@ -29,12 +30,17 @@ export default {
         justify-content: flex-start;
         align-items: center;
 
+        img{
+            width: 40%;
+            margin: 0 0 2rem 0;
 
+        }
         h1{
             font-family: 'Rampart One', cursive;
             color: white;
             padding: .5rem;
-            font-size: 3rem;
+            margin: 0 0 1rem 0;
+            font-size: 3.5rem;
 
         }
         p{
@@ -62,6 +68,10 @@ export default {
 }
 @media only screen and (max-width: 1200px) {
     #sobre{
+        img{
+            width: 50%;
+
+        }
         h1{
             font-size: 2.3rem;
 
@@ -73,9 +83,61 @@ export default {
     }
 }
 @media only screen and (max-width: 992px) {
+    #sobre{
+        img{
+            width: 50%;
+
+        }
+    }
 }
 @media only screen and (max-width: 720px) {
+    #sobre{
+        img{
+            width: 40%;
+            margin: 0 0 1rem 0;
+
+        }
+        h1{
+            font-size: 2rem;
+
+        }
+    }
 }
 @media only screen and (max-width: 481px) {
+    #sobre{
+        img{
+            width: 60%;
+
+        }
+        h1{
+            font-size: 1.5rem;
+            
+        }
+    }
+}
+@media only screen and (max-width: 360px) {
+    #sobre{
+        padding: .2rem;
+
+        img{
+            width: 80%;
+            margin: 0 0 .8rem 0;
+
+        }
+        h1{
+            font-size: 1.3rem;
+            width: 100%;
+            text-align: center;
+            padding: .5rem;
+            margin: 0 0 .3rem 0;
+
+        }
+        p{
+            font-size: .9rem;
+            width: 100%;
+            padding: .8rem;
+
+        }
+    }
 }
 </style>

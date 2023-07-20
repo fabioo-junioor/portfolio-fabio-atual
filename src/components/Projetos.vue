@@ -124,12 +124,6 @@ export default {
             },
         ],
     };
-  },
-  methods:{
-    verMais(){
-        console.log("Clicou");
-        this.qtd += 6
-    }
   }
 };
 </script>

@@ -37,11 +37,11 @@
 </template>
 
 <script>
-import 'animate.css'
+import "animate.css";
 
 import Sobre from "./components/Sobre.vue";
 import Projetos from "./components/Projetos.vue";
-import Tecnologias from "./components/Tecnologias.vue"
+import Tecnologias from "./components/Tecnologias.vue";
 import Contato from "./components/Contato.vue";
 
 export default {
@@ -67,28 +67,24 @@ export default {
         this.projetos = false;
         this.tecnologias = false;
         this.contato = false;
-
       }
       if (id === 2) {
         this.sobre = false;
         this.projetos = true;
         this.tecnologias = false;
         this.contato = false;
-
       }
       if (id === 3) {
         this.sobre = false;
         this.projetos = false;
         this.tecnologias = true;
         this.contato = false;
-
       }
-      if(id === 4){
+      if (id === 4) {
         this.sobre = false;
         this.projetos = false;
         this.tecnologias = false;
         this.contato = true;
-
       }
       console.log("Clicou ", id);
 
@@ -98,18 +94,26 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@500&family=Rampart+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@500&family=Rampart+One&display=swap");
 #app {
   background: #536976; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #292e49, #536976); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right,#292e49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(
+    to right,
+    #292e49,
+    #536976
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #292e49,
+    #536976
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 100vh;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  #corpo{
+  #corpo {
     background-color: #16222a;
     box-shadow: 2px 2px 8px 5px rgba(0, 0, 0, 0.5);
 
@@ -121,13 +125,12 @@ export default {
     width: 95%;
 
     border-radius: 5px;
-
   }
 
   #foto {
     width: 30%;
     height: 100%;
-    padding: .5rem;
+    padding: 0.5rem;
 
     display: flex;
     justify-content: center;
@@ -135,8 +138,7 @@ export default {
 
     img {
       height: 25rem;
-      border-radius: 10%;
-
+      border-radius: 10% 2%;
     }
   }
   #menu {
@@ -153,14 +155,13 @@ export default {
       background-color: #292e49;
       box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.8);
       border: 1px solid rgba(0, 0, 0, 0.5);
-        
-      font-family: 'Anek Telugu', sans-serif;
+
+      font-family: "Anek Telugu", sans-serif;
       font-size: 1.2rem;
       font-weight: bold;
       color: white;
       width: 90%;
       height: 8rem;
-
     }
   }
   #descricao {
@@ -171,146 +172,184 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-
-
   }
 }
 
 /*################################################*/
 @media only screen and (max-width: 1560px) {
-  #app{
-    #foto{
-      img{
+  #app {
+    #foto {
+      img {
         height: 20rem;
-
       }
     }
-    #menu{
-      button{
+    #menu {
+      button {
         font-size: 1rem;
-
       }
     }
   }
 }
 @media only screen and (max-width: 1200px) {
-  #app{
-    #foto{
-      img{
+  #app {
+    #foto {
+      img {
         height: 18rem;
-
       }
     }
-    #menu{
-      button{
-        font-size: .8rem;
+    #menu {
+      button {
+        font-size: 0.8rem;
         height: 7rem;
-
       }
     }
   }
 }
 @media only screen and (max-width: 992px) {
-  #app{
-    #foto{
-      img{
+  #app {
+    #foto {
+      img {
         height: 15rem;
-
       }
     }
-    #menu{
-      button{
-        font-size: .7rem;
+    #menu {
+      button {
+        font-size: 0.7rem;
         height: 6rem;
-        
       }
     }
   }
 }
 @media only screen and (max-width: 720px) {
-  #app{  
-    #corpo{
+  #app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    #corpo {
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      width: 95%;
-      height: auto;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      margin: 1rem;
 
-      #foto{
+      #foto {
         width: 100%;
         height: auto;
 
-        img{
+        img {
           height: 18rem;
-
         }
-
       }
-      #menu{
+      #menu {
         display: flex;
         flex-direction: row;
         width: 100%;
         height: auto;
-        padding: .5rem;
+        padding: 0.5rem;
 
-        button{
-          font-size: .9rem;
+        button {
+          font-size: 0.9rem;
           width: 8rem;
           height: 6rem;
-
         }
-
       }
-      #descricao{
+      #descricao {
         width: 100%;
         height: auto;
+        padding: 1rem;
 
       }
     }
   }
 }
 @media only screen and (max-width: 481px) {
-  #app{
+  #app {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    
-    #corpo{
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    #corpo {
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      width: 95%;
-      height: auto;
+      justify-content: center;
+      width: 100%;
+      margin: .7rem;
 
-      #foto{
+      #foto {
         width: 100%;
         height: auto;
 
-        img{
+        img {
           height: 15rem;
-          
         }
-
       }
-      #menu{
+      #menu {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: auto;
-        padding: .5rem;
+        padding: 0.2rem;
 
-        button{
+        button {
           width: 95%;
           height: 3rem;
-          margin: .3rem;
-
+          margin: 0.2rem;
         }
-
       }
-      #descricao{
+      #descricao {
+        width: 100%;
+        height: 100%;
+        padding: .5rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 360px) {
+  #app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    #corpo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 95%;
+      height: 95%;
+
+      #foto {
         width: 100%;
         height: auto;
 
+        img {
+          height: 15rem;
+        }
+      }
+      #menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 0.3rem;
+        
+        button {
+          width: 95%;
+          height: 3rem;
+          margin: 0.2rem;
+        }
+      }
+      #descricao {
+        width: 100%;
+        height: 100%;
+        margin-top: 1rem;
+        
       }
     }
   }
