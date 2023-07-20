@@ -1,234 +1,318 @@
 <template lang="js">
   <div id="app">
-    <div id="sobre__app">
-      <Sobre />
-    </div>
-    <div class="points">
-      <v-divider></v-divider>
-      <v-divider></v-divider>
-    </div>
-    <div id="tech__app">
-      <Tecnologias/>
-    </div>
-    <div class="points">
-      <v-divider></v-divider>
-      <v-divider></v-divider>
-    </div>
-    <div id="servicos__app">
-      <Servicos/>
-    </div>
-    <div class="points">
-      <v-divider></v-divider>
-      <v-divider></v-divider>
-    </div>
-    <div id="projetos__app">
-      <Projetos/>
-    </div>
-    <div class="points">
-      <v-divider></v-divider>
-      <v-divider></v-divider>
-    </div>
-    <div id="footer__app">
-      <Footer/>
-    </div>
+    <div id="corpo">
+        <div id="foto">
+          <img src="./assets/img-face/eu.jpg" />
+        </div>
+        <div id="menu">
+          <v-btn
+            @click="verMais(1)"
+            large
+            x-large>SOBRE</v-btn>
+          <v-btn
+            @click="verMais(2)"
+            large
+            x-large>PROJETOS</v-btn>
+          <v-btn
+            @click="verMais(3)"
+            large
+            x-large>TECNOLOGIAS</v-btn>
+          <v-btn
+            @click="verMais(4)"
+            large
+            x-large>CONTATO</v-btn>
+        </div>
+        <div id="descricao">
+          <Sobre v-show="sobre"
+            class="animate__animated animate__fadeInUp" />
+          <Projetos v-show="projetos"
+            class="animate__animated animate__fadeInUp" />
+          <Tecnologias v-show="tecnologias"
+            class="animate__animated animate__fadeInUp" />
+          <Contato v-show="contato"
+            class="animate__animated animate__fadeInUp" />
+        </div>
+      </div>
   </div>
 </template>
 
 <script>
-import Menu from './components/Menu.vue'
-import Sobre from './components/Sobre.vue'
-import Tecnologias from './components/Tecnologias.vue'
-import Servicos from './components/Servicos.vue'
-import Projetos from './components/Projetos.vue'
-import Form from './components/Form.vue'
-import Footer from './components/Footer.vue'
+import 'animate.css'
+
+import Sobre from "./components/Sobre.vue";
+import Projetos from "./components/Projetos.vue";
+import Tecnologias from "./components/Tecnologias.vue"
+import Contato from "./components/Contato.vue";
 
 export default {
   name: "App",
   components: {
-    Menu,
     Sobre,
-    Tecnologias,
-    Servicos,
     Projetos,
-    Form,
-    Footer
-  }
+    Tecnologias,
+    Contato,
+  },
+  data() {
+    return {
+      sobre: true,
+      projetos: false,
+      tecnologias: false,
+      contato: false,
+    };
+  },
+  methods: {
+    verMais(id) {
+      if (id === 1) {
+        this.sobre = true;
+        this.projetos = false;
+        this.tecnologias = false;
+        this.contato = false;
 
-}
+      }
+      if (id === 2) {
+        this.sobre = false;
+        this.projetos = true;
+        this.tecnologias = false;
+        this.contato = false;
+
+      }
+      if (id === 3) {
+        this.sobre = false;
+        this.projetos = false;
+        this.tecnologias = true;
+        this.contato = false;
+
+      }
+      if(id === 4){
+        this.sobre = false;
+        this.projetos = false;
+        this.tecnologias = false;
+        this.contato = true;
+
+      }
+      console.log("Clicou ", id);
+
+      id = 0;
+    },
+  },
+};
 </script>
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@500&family=Rampart+One&display=swap');
+#app {
+  background: #536976; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #292e49, #536976); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,#292e49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  #corpo{
+    background-color: #16222a;
+    box-shadow: 2px 2px 8px 5px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 90%;
+    width: 95%;
+
+    border-radius: 5px;
+
+  }
+
+  #foto {
+    width: 30%;
+    height: 100%;
+    padding: .5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 25rem;
+      border-radius: 10%;
+
+    }
+  }
+  #menu {
+    width: 10%;
+    height: 100%;
+    padding: 2rem 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    button {
+      background-color: #292e49;
+      box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.5);
+        
+      font-family: 'Anek Telugu', sans-serif;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+      width: 90%;
+      height: 8rem;
+
+    }
+  }
+  #descricao {
+    width: 60%;
+    height: 100%;
+    padding: 2rem 2rem 2rem 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+}
+
+/*################################################*/
+@media only screen and (max-width: 1560px) {
   #app{
-    box-sizing: border-box;
-    padding: 0rem .8rem .5rem .8rem;
-    margin: 0px;
-    background-image: url("@/assets/img-fundo/fundo3.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
+    #foto{
+      img{
+        height: 20rem;
 
-    #sobre__app{
-      padding: 5rem 30rem .5rem 30rem;
+      }
+    }
+    #menu{
+      button{
+        font-size: 1rem;
 
-    }
-    #tech__app{
-      padding: .5rem 10rem .5rem 10rem;
-      
-    }
-    #servicos__app{
-      padding: .5rem 20rem .5rem 20rem;
-      
-    }
-    #projetos__app{
-      padding: .5rem 20rem .5rem 20rem;
-
-    }
-    #form__app{
-      padding: .5rem 35rem .5rem 35rem;
-
-    }
-    #footer_app{
-      padding: .5rem .5rem .5rem .5rem;
-      
-    }
-    .points{
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      hr{
-        margin: .5rem 0rem;
-        border-radius: 50%;
-        border: 7px solid #6b03c0;
-        box-shadow: 0px 0px 5px black;
-        width: 10px;
       }
     }
   }
+}
+@media only screen and (max-width: 1200px) {
+  #app{
+    #foto{
+      img{
+        height: 18rem;
 
-/*################################################*/
-  @media only screen and (max-width: 1560px){
-    #app{
-      padding: 0rem .3rem 0rem .3rem;
-    
+      }
     }
-    #sobre__app{
-      padding: 5rem 25rem .5rem 25rem !important;
-      
-    }
-    #servicos__app{
-      padding: .5rem 15rem .5rem 15rem !important;
-      
-    }
-    #projetos__app{
-      padding: .5rem 10rem .5rem 10rem !important;
+    #menu{
+      button{
+        font-size: .8rem;
+        height: 7rem;
 
+      }
     }
   }
-  @media only screen and (max-width: 1200px){
-    #app{
-      padding: 0rem .3rem 0rem .3rem;
-    
-    }
-    #sobre__app{
-      padding: 5rem 15rem .5rem 15rem !important;
-      
-    }
-    #tech__app{
-      padding: .5rem 5rem .5rem 5rem !important;
-      
-    }
-    #servicos__app{
-      padding: .5rem 10rem .5rem 10rem !important;
-      
-    }
-    #projetos__app{
-      padding: .5rem 2rem .5rem 2rem !important;
+}
+@media only screen and (max-width: 992px) {
+  #app{
+    #foto{
+      img{
+        height: 15rem;
 
+      }
     }
-    #form__app{
-      padding: .5rem 15rem .5rem 15rem !important;
-
+    #menu{
+      button{
+        font-size: .7rem;
+        height: 6rem;
+        
+      }
     }
   }
-  @media only screen and (max-width: 992px){
-    #app{
-      padding: 0rem .3rem 0rem .3rem;
-    
-    }
-     #sobre__app{
-      padding: 5rem 10rem .5rem 10rem !important;
-      
-     }
-    #tech__app{
-      padding: .5rem 3rem .5rem 3rem !important;
-      
-    }
-    #servicos__app{
-      padding: .5rem 5rem .5rem 5rem !important;
-      
-    }
-    #projetos__app{
-      padding: .5rem 1rem .5rem 1rem !important;
+}
+@media only screen and (max-width: 720px) {
+  #app{  
+    #corpo{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 95%;
+      height: auto;
 
-    }
-    #form__app{
-      padding: .5rem 10rem .5rem 10rem !important;
+      #foto{
+        width: 100%;
+        height: auto;
 
+        img{
+          height: 18rem;
+
+        }
+
+      }
+      #menu{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        padding: .5rem;
+
+        button{
+          font-size: .9rem;
+          width: 8rem;
+          height: 6rem;
+
+        }
+
+      }
+      #descricao{
+        width: 100%;
+        height: auto;
+
+      }
     }
   }
-  @media only screen and (max-width: 720px){
-    #app{
-      padding: 0rem .3rem 0rem .3rem;
+}
+@media only screen and (max-width: 481px) {
+  #app{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     
-    }
-    #sobre__app{
-      padding: 5rem 5rem .5rem 5rem !important;
-      
-    }
-    #tech__app{
-      padding: .5rem 1.5rem .5rem 1.5rem !important;
-      
-    }
-    #servicos__app{
-      padding: .5rem 1.5rem .5rem 1.5rem !important;
-      
-    }
-    #projetos__app{
-      padding: .5rem 0rem .5rem 0rem !important;
+    #corpo{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 95%;
+      height: auto;
 
-    }
-    #form__app{
-      padding: .5rem 3rem .5rem 3rem !important;
+      #foto{
+        width: 100%;
+        height: auto;
 
+        img{
+          height: 15rem;
+          
+        }
+
+      }
+      #menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: .5rem;
+
+        button{
+          width: 95%;
+          height: 3rem;
+          margin: .3rem;
+
+        }
+
+      }
+      #descricao{
+        width: 100%;
+        height: auto;
+
+      }
     }
   }
-  @media only screen and (max-width: 481px){
-    #app{
-      padding: 0rem .3rem 0rem .3rem;
-    
-    }
-     #sobre__app{
-      padding: 5rem 0rem .5rem 0rem !important;
-      
-     }
-    #tech__app{
-      padding: .5rem 0rem .5rem 0rem !important;
-      
-    }
-    #servicos__app{
-      padding: .5rem 0rem .5rem 0rem !important;
-      
-    }
-    #projetos__app{
-      padding: .5rem 0rem .5rem 0rem !important;
-
-    }
-    #form__app{
-      padding: .5rem 0rem .5rem 0rem !important;
-
-    }
-  }
+}
 </style>
