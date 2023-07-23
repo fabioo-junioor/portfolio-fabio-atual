@@ -49,6 +49,7 @@ export default {
             padding: 1rem;
             font-size: 1.5rem;
             text-align: center;
+            text-align: justify;
 
         }
 
@@ -113,6 +114,10 @@ export default {
             font-size: 1.5rem;
             
         }
+        p{
+            padding: 0;
+
+        }
     }
 }
 @media only screen and (max-width: 360px) {
@@ -135,7 +140,7 @@ export default {
         p{
             font-size: .9rem;
             width: 100%;
-            padding: .8rem;
+            padding: .5rem;
 
         }
     }

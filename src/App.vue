@@ -116,19 +116,18 @@ export default {
   #corpo {
     background-color: #16222a;
     box-shadow: 2px 2px 8px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
     height: 90%;
-    width: 95%;
+    width: 97%;
 
-    border-radius: 5px;
   }
-
   #foto {
-    width: 30%;
+    width: 25%;
     height: 100%;
     padding: 0.5rem;
 
@@ -138,13 +137,14 @@ export default {
 
     img {
       height: 25rem;
-      border-radius: 10% 2%;
+      border-radius: 50%;
+      border: 2px solid white;
+
     }
   }
   #menu {
     width: 10%;
     height: 100%;
-    padding: 2rem 0;
 
     display: flex;
     flex-direction: column;
@@ -154,7 +154,7 @@ export default {
     button {
       background-color: #292e49;
       box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.8);
-      border: 1px solid rgba(0, 0, 0, 0.5);
+      border: 2px solid rgba(0, 0, 0, 0.5);
 
       font-family: "Anek Telugu", sans-serif;
       font-size: 1.2rem;
@@ -165,13 +165,14 @@ export default {
     }
   }
   #descricao {
-    width: 60%;
+    width: 65%;
     height: 100%;
-    padding: 2rem 2rem 2rem 1rem;
+    padding: 1rem;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
   }
 }
 
@@ -209,7 +210,7 @@ export default {
   #app {
     #foto {
       img {
-        height: 15rem;
+        height: 13rem;
       }
     }
     #menu {

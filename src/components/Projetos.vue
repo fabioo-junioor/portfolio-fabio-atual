@@ -159,7 +159,6 @@ export default {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: .5rem;
-        align-items: stretch;
 
         .v-card{
             display: flex;
