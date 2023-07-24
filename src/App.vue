@@ -3,6 +3,7 @@
     <div id="corpo">
         <div id="foto">
           <img src="./assets/img-face/eu.jpg" />
+          <h2>Web Developer Front End</h2>
         </div>
         <div id="menu">
           <v-btn
@@ -132,6 +133,7 @@ export default {
     padding: 0.5rem;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -139,6 +141,18 @@ export default {
       height: 25rem;
       border-radius: 50%;
       border: 2px solid white;
+
+    }
+    h2{
+      font-family: "Anek Telugu", sans-serif;
+      font-size: 1.5em;
+      color: white;
+      padding: .7rem .5rem;
+      margin: 1rem 0 0 0;
+
+      border-radius: 5px;
+      background-color: transparent;
+      box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 1);
 
     }
   }
@@ -196,6 +210,11 @@ export default {
     #foto {
       img {
         height: 18rem;
+
+      }
+      h2{
+      font-size: 1.2em;
+
       }
     }
     #menu {
@@ -211,6 +230,11 @@ export default {
     #foto {
       img {
         height: 13rem;
+
+      }
+      h2{
+        font-size: 1rem;
+
       }
     }
     #menu {
@@ -243,6 +267,11 @@ export default {
 
         img {
           height: 18rem;
+
+        }
+        h2{
+          font-size: 1.3rem;
+
         }
       }
       #menu {
