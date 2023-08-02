@@ -191,10 +191,11 @@ export default {
                 p{
                     background-color: transparent;
                     box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.7);
-                    padding: .3rem .5rem;
+                    padding: .2rem;
                     margin: .2rem;
-                    border-radius: 40px;
-                    font-size: .9rem;
+                    border-radius: 5px;
+                    font-size: .8rem;
+                    font-weight: normal;
 
                 }
                 p:hover{
@@ -220,7 +221,7 @@ export default {
 
                         font-family: "Anek Telugu", sans-serif;
                         font-size: .9rem;
-                        font-weight: bold;
+                        font-weight: normal;
                         color: white;
                         width: 100%;
                         padding: 0;
@@ -250,9 +251,8 @@ export default {
                 padding: .1rem;
 
                 p{
-                    padding: .2rem .4rem;
                     margin: .1rem .2rem;
-                    font-size: .8rem;
+                    font-size: .7rem;
 
                 }                
             }
@@ -261,8 +261,7 @@ export default {
                     padding: .2rem;
                 
                     button{
-                        font-size: .8rem;
-                        font-weight: normal;
+                        font-size: .7rem;
 
                     }
                 }
@@ -288,9 +287,7 @@ export default {
                 padding: .1rem;
 
                 p{
-                    padding: .2rem .3rem;
                     margin: .1rem;
-                    font-size: .7rem;
 
                 }                
             }
@@ -300,7 +297,6 @@ export default {
                 
                     button{
                         font-size: .8rem;
-                        font-weight: normal;
                         height: 1.7rem;
 
                     }
@@ -328,9 +324,7 @@ export default {
                 padding: .1rem;
 
                 p{
-                    padding: .2rem .3rem;
-                    margin: .1rem;
-                    font-size: .7rem;
+                    font-size: .8rem;
 
                 }                
             }
@@ -340,7 +334,6 @@ export default {
                 
                     button{
                         font-size: .8rem;
-                        font-weight: normal;
                         height: 1.8rem;
 
                     }
@@ -367,8 +360,6 @@ export default {
                 padding: .1rem;
 
                 p{
-                    padding: .2rem .3rem;
-                    margin: .1rem;
                     font-size: .8rem;
 
                 }                
@@ -379,7 +370,6 @@ export default {
                 
                     button{
                         font-size: .8rem;
-                        font-weight: normal;
                         height: 1.7rem;
 
                     }
@@ -406,9 +396,7 @@ export default {
                 padding: .1rem;
 
                 p{
-                    padding: .2rem .3rem;
-                    margin: .1rem;
-                    font-size: .7rem;
+                    font-size: .8rem;
 
                 }                
             }
@@ -418,7 +406,6 @@ export default {
                 
                     button{
                         font-size: .8rem;
-                        font-weight: normal;
                         height: 1.7rem;
 
                     }
