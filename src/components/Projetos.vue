@@ -85,10 +85,22 @@ export default {
             tech3: "CSS",
           },
           tipo: "Site Institucional",
-          link: false
+          link: "https://nucleoimpulso.com.br/"
         },
         {
           id: 7,
+          title: "Patrimônio Dona Francisca",
+          techs: {
+            tech1: "Wordpress",
+            tech2: "Elementor",
+            tech3: "JavaScript",
+            tech4: "CSS",
+          },
+          tipo: "Site Institucional",
+          link: "https://patrimoniosdonafrancisca.site/"
+        },
+        {
+          id: 8,
           title: "HASupport",
           techs: {
             tech1: "HTML5",
@@ -102,7 +114,7 @@ export default {
           link: "https://github.com/fabioo-junioor/HA--ASSIST",
         },
         {
-          id: 8,
+          id: 9,
           title: "Electoral Partials",
           techs: {
             tech1: "Kotlin",
@@ -114,10 +126,10 @@ export default {
           link: "https://github.com/fabioo-junioor/project-app-electoral-partials",
         },
         {
-          id: 9,
+          id: 10,
           title: "Portfólio",
           techs: {
-            tech1: "Vue JS",
+            tech1: "VueJs",
             tech2: "Vuetify",
             tech3: "SASS",
             tech4: "Animate.css",
@@ -126,7 +138,7 @@ export default {
           link: "https://fabiojuniordev.netlify.app/",
         },
         {
-            id: 10,
+            id: 11,
             title: "Jogo da Memória",
             techs: {
                 tech1: "HTML5",
@@ -136,6 +148,20 @@ export default {
             },
             tipo: "Jogo Web",
             link: "https://memoriasdopassado.netlify.app/"
+        },
+        {
+            id: 12,
+            title: "UniConecta",
+            techs: {
+                tech1: "Vue Js",
+                tech2: "BootstrapVue",
+                tech3: "SASS",
+                tech4: "VueRouter",
+                tech5: "PHP",
+                tech6: "Mysql"
+            },
+            tipo: "Em desenvolvimento",
+            link: "https://uniconecta.netlify.app/"
         }
       ],
     };
