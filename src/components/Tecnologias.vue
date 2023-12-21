@@ -26,7 +26,6 @@ export default {
                 { title: 'PHP', level: '2 de 5', src: require('../assets/img-tools/php.png')},
                 { title: 'BootstrapVue', level: '3 de 5', src: require('../assets/img-tools/bootstrap-vue.png')},
                 { title: 'Vuetify', level: '2 de 5', src: require('../assets/img-tools/vuetify.png')},
-                { title: 'Kotlin', level: '1 de 5', src: require('../assets/img-tools/kotlin.png')},
                 { title: 'Scrum', level: '4 de 5', src: require('../assets/img-tools/scrum.png')},
                 { title: 'Wordpress', level: '4 de 5', src: require('../assets/img-tools/wordpress.png')},
                 { title: 'GitHub', level: '2 de 5', src: require('../assets/img-tools/github.png')}
