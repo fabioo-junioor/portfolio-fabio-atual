@@ -2,7 +2,7 @@
     <div id="sobre">
         <img src="../assets/img-logo/logo2.png" />
         <h1> &lsaquo;from the next step /&rsaquo;</h1>
-        <p>Meu nome é Fábio estou cursando Sistemas de Informação na Universidade Federal de Santa Maria, com uma ênfase pessoal em desenvolvimento web front-end. Anteriormente a faculdade conclui alguns cursos como Técnico em Contabilidade pela Instituição Federal SulRiograndense (2015) e Técnico em Informática para Internet pela Colégio Técnico Industrial de Santa Maria (2017).</p>
+        <p>Profissional na área do desenvolvimento web, especializado(a) em html, css, javascript e vuejs. Proativo(a) e orientado(a) para resultados, busco contribuir com minha experiência em desenvolvimento web front-end. Comprometido(a) com a excelência, estou pronto(a) para integrar uma equipe dinâmica e agregar valor. Possuo Técnico em Contabilidade pela Instituição Federal Sul-Riograndense (2015), Técnico em Informática para Internet pelo Colégio Técnico Industrial de Santa Maria (2016) e Bacharelado em Sistemas de Informação pela Universidade Federal de Santa Maria (2023).</br> Tecnologias e Ferramentas: HTML, CSS, JavaScript, VueJs, Bootstrap, Bootstrap-vue, PHP, Mysql, Wordpress, Woocommerce, Scrum/Kanban, Git/Github, C e Sass.</br> Aprendendo novas linguagens e ferramentas: PrimeVue e Laravel.</p>
     </div>
 </template>
 <script>
