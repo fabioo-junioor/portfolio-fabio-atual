@@ -160,7 +160,7 @@ export default {
                 tech5: "PHP",
                 tech6: "Mysql"
             },
-            tipo: "Em desenvolvimento",
+            tipo: "TCC - Parte Prática",
             link: "https://uniconecta.netlify.app/"
         }
       ],
