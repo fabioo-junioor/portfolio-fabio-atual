@@ -1,11 +1,19 @@
-# portfolio
+# Portfolio Fábio Atual
 
-## Project setup
-```
+## Project Setup
+
+```sh
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
 ```
-npm run serve
+
+### Compile and Minify for Production
+
+```sh
+npm run build
 ```

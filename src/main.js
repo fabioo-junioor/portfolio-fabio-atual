@@ -1,11 +1,16 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
-import './registerServiceWorker'
-import vuetify from './plugins/vuetify'
 
-Vue.config.productionTip = false
+/* Primevue */
+import Primevue from 'primevue/config'
+import Card from 'primevue/card'
+import Button from 'primevue/button'
 
-new Vue({
-  vuetify,
-  render: h => h(App)
-}).$mount('#app')
+import 'primevue/resources/themes/lara-light-green/theme.css'
+import 'primeicons/primeicons.css'
+
+createApp(App)
+    .use(Primevue)
+    .component('Card', Card)
+    .component('Button', Button)
+    .mount('#app')
