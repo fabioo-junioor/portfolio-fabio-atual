@@ -1,12 +1,22 @@
-<script setup>
-import CardTeste from './components/CardTeste.vue'
+<script>
+import Menu from './components/Menu.vue'
+import Sobre from './components/Sobre.vue'
 
+export default{
+  name: 'App',
+  components: {Menu, Sobre},
+  data(){
+    return{
+
+    }
+  }
+}
 </script>
 
 <template>
   <div id="app">
-    <h3>Em desenvolvimento</h3>
-    <CardTeste />
+    <Menu />
+    <Sobre />
   </div>
 </template>
 
@@ -14,10 +24,5 @@ import CardTeste from './components/CardTeste.vue'
 #app{
   height: 100vh;
 
-  h3{
-    color: #333;
-    margin: 1rem;
-
-  }
 }
 </style>
