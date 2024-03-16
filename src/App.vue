@@ -1,10 +1,11 @@
 <script>
 import Menu from './components/Menu.vue'
 import Sobre from './components/Sobre.vue'
+import Tecnologias from './components/Tecnologias.vue'
 
 export default{
   name: 'App',
-  components: {Menu, Sobre},
+  components: {Menu, Sobre, Tecnologias},
   data(){
     return{
 
@@ -17,6 +18,7 @@ export default{
   <div id="app">
     <Menu />
     <Sobre />
+    <Tecnologias />
   </div>
 </template>
 
