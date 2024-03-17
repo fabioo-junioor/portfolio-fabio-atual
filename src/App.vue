@@ -2,10 +2,11 @@
 import Menu from './components/Menu.vue'
 import Sobre from './components/Sobre.vue'
 import Tecnologias from './components/Tecnologias.vue'
+import Rodape from './components/Rodape.vue'
 
 export default{
   name: 'App',
-  components: {Menu, Sobre, Tecnologias},
+  components: {Menu, Sobre, Tecnologias, Rodape},
   data(){
     return{
 
@@ -19,6 +20,7 @@ export default{
     <Menu />
     <Sobre />
     <Tecnologias />
+    <Rodape />
   </div>
 </template>
 

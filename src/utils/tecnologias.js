@@ -10,6 +10,7 @@ const techs = [
     {nome: 'Sass', img: require('../assets/tecnologias/sass.png')},
     {nome: 'Linguagem C', img: require('../assets/tecnologias/c.png')},
     {nome: 'PHP', img: require('../assets/tecnologias/php.png')},
+    {nome: 'Mysql', img: require('../assets/tecnologias/mysql.png')},
     {nome: 'Scrum', img: require('../assets/tecnologias/scrum.png')},
     {nome: 'Wordpress', img: require('../assets/tecnologias/wordpress.png')},
     {nome: 'Github', img: require('../assets/tecnologias/github.png')}
