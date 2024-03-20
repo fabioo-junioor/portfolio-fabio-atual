@@ -37,7 +37,7 @@ export default{
         align-items: center;
         background-color: black;
         font-family: "Madimi One", sans-serif;
-        padding: 3rem 0;
+        padding: 5rem 0;
 
         h3{
             font-size: 2rem;

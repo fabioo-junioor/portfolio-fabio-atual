@@ -40,7 +40,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem 0 0 0;
+    padding: 3rem 0 0 0;
     background-color: black;
     font-family: "Madimi One", sans-serif;
 

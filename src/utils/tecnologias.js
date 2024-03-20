@@ -13,7 +13,8 @@ const techs = [
     {nome: 'Mysql', img: require('../assets/tecnologias/mysql.png')},
     {nome: 'Scrum', img: require('../assets/tecnologias/scrum.png')},
     {nome: 'Wordpress', img: require('../assets/tecnologias/wordpress.png')},
-    {nome: 'Github', img: require('../assets/tecnologias/github.png')}
+    {nome: 'Github', img: require('../assets/tecnologias/github.png')},
+    {nome: 'Netlify', img: require('../assets/tecnologias/netlify.png')}
 ]
 
 export default techs;
