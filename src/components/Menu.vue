@@ -14,7 +14,7 @@ export default {
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item>Inicio</b-nav-item>
+          <b-nav-item href="/">Inicio</b-nav-item>
           <b-nav-item href="#tecnologias">Tecnologias</b-nav-item>
           <b-nav-item href="#projetos">Projetos</b-nav-item>
           <b-nav-item href="#rodape">Contato</b-nav-item>

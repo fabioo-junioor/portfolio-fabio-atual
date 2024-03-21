@@ -105,7 +105,7 @@ export default {
         h4{
             text-align: center;
             font-size: 1.3rem;
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 255, 255, .8);
             margin: 0 0 0 2rem;
 
         }

@@ -69,7 +69,7 @@ export default {
 
       }
       .sobre-texto{
-        color: rgba(255, 255, 255, 0.8);
+        color: rgba(255, 255, 255, .8);
         font-size: 1.3rem;
         text-align: justify;
         padding: .5rem 0 0 0;

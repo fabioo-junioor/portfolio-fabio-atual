@@ -36,7 +36,8 @@ export default {
         :wrap-around="true"
         :items-to-show="itensShow"
         :autoplay="3000"
-        :transition="500">
+        :pauseAutoplayOnHover="true"
+        :transition="1000">
       <Slide v-for="i in projetos" :key="i.id">
         <div class="carousel__item">
             <div class="projetos-imagem">
@@ -82,7 +83,7 @@ export default {
         font-size: 2rem;
         margin: 0 0 2rem 0;
         padding: 1rem;
-        border-radius: 10px;
+        border-radius: 5px;
         border: 2px solid #10e956;
         background-color: rgb(40, 40, 40);
         color: #10e956;
