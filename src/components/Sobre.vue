@@ -41,6 +41,7 @@ export default {
     display: flex;
     width: 100%;
     height: 90vh;
+    padding: 6rem 0;
     font-family: "Madimi One", sans-serif;
 
     .sobre-apresentacao{
@@ -87,4 +88,98 @@ export default {
       }
     }
   }
+/*################################################*/
+@media only screen and (max-width: 1560px) {
+
+}
+@media only screen and (max-width: 1200px) {
+  #sobre{
+    .sobre-apresentacao{
+      padding: 2rem;
+
+      .sobre-nome{
+        font-size: 2rem;
+
+        .sobre-gif-tempo{
+          height: 2rem;
+
+        }
+      }
+      .sobre-titulo{
+        font-size: 1.5rem;
+
+      }
+      .sobre-texto{
+        font-size: 1.1rem;
+
+      }
+    }
+    .sobre-imagem{
+      .sobre-draw{
+        width: 50%;
+
+      }
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  #sobre{
+    height: auto;
+    
+    .sobre-apresentacao{
+      padding: 1.5rem;
+
+      .sobre-nome{
+        font-size: 1.7rem;
+
+      }
+      .sobre-titulo{
+        font-size: 1.3rem;
+
+      }
+      .sobre-texto{
+        font-size: 1rem;
+
+      }
+    }
+    .sobre-imagem{
+      .sobre-draw{
+        width: 55%;
+
+      }
+    }
+  }
+}
+@media only screen and (max-width: 720px) {
+  #sobre{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+    .sobre-apresentacao{
+      padding: 1rem;
+      width: 100%;
+
+      .sobre-texto{
+        font-size: 1.1rem;
+
+      }
+    }
+    .sobre-imagem{
+      width: 100%;
+      padding: 1rem;
+
+      .sobre-draw{
+        width: 60%;
+      }
+
+    }
+  }
+}
+@media only screen and (max-width: 481px) {
+
+}
+@media only screen and (max-width: 360px) {
+  
+}
 </style>

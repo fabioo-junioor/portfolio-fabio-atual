@@ -9,6 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vue/compat": "^3.4.21",
+    "bootstrap": "^5.3.3",
+    "bootstrap-vue": "^2.23.1",
     "primeicons": "^6.0.1",
     "primevue": "^3.49.1",
     "vite-plugin-require": "^1.1.14",

@@ -88,7 +88,7 @@ const projetos = [
         techs: ['VueJs', 'Vuetify', 'SASS', 'Animate.css', 'Netlify'],
         tipo: 'Site Pessoal',
         imagem: require('../assets/projetos/portfolio2022.png'),
-        link: '',
+        link: 'https://fabiojuniordev2022.netlify.app/',
         repositorio: 'https://github.com/fabioo-junioor/portfolio-fabio-2022'
     },
     {
@@ -112,16 +112,16 @@ const projetos = [
     {
         id: 14,
         titulo: 'Portfólio 2024',
-        techs: ['VueJs', 'Primevue', 'SASS', 'PrimevueIcons', 'Vite', 'Netlify'],
+        techs: ['VueJs', 'BootstrapVue', 'Primevue', 'SASS', 'Vite', 'Netlify'],
         tipo: 'Site Pessoal',
-        imagem: require('../assets/projetos/imagem-dafault.jpg'),
-        link: '',
+        imagem: require('../assets/projetos/portfolio2024.png'),
+        link: 'https://fabiojuniordev.netlify.app/',
         repositorio: 'https://github.com/fabioo-junioor/portfolio-fabio-atual'
     },
     {
         id: 15,
         titulo: 'Pokedex',
-        techs: ['VueJs', 'Primevue', 'SASS', 'Vite', 'Netlify'],
+        techs: ['VueJs', 'Primevue', 'SASS', 'Vite', 'PokeApi', 'Netlify'],
         tipo: 'Aplicação Web',
         imagem: require('../assets/projetos/pokedex.png'),
         link: 'https://pokedex-fj.netlify.app/',
@@ -153,6 +153,15 @@ const projetos = [
         imagem: require('../assets/projetos/game-hush.png'),
         link: 'https://julianopasa.itch.io/procrastinator-rush',
         repositorio: 'https://github.com/fabioo-junioor/game-rush'
+    },
+    {
+        id: 19,
+        titulo: 'Mesa Online',
+        techs: ['VueJs', 'SASS', 'Primevue', 'Vite', 'Netlify'],
+        tipo: 'Aplicação Web',
+        imagem: require('../assets/projetos/imagem-dafault.jpg'),
+        link: '',
+        repositorio: 'https://github.com/fabioo-junioor/mesaOnline'
     }
 ]
 

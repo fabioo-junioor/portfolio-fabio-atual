@@ -40,7 +40,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem 0 0 0;
+    padding: 5rem 0 0 0;
     background-color: black;
     font-family: "Madimi One", sans-serif;
 
@@ -130,4 +130,101 @@ export default {
         }
     }
   }
+/*################################################*/
+@media only screen and (max-width: 1560px) {
+
+}
+@media only screen and (max-width: 1200px) {
+
+}
+@media only screen and (max-width: 992px) {
+    #rodape{
+        .rodape-midias{
+            a{
+                span{
+                    font-size: 2rem;
+
+                }
+                i{
+                    font-size: 3rem;
+
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 720px) {
+    #rodape{
+        .rodape-midias{
+            a{
+                span{
+                    font-size: 1.5rem;
+
+                }
+                i{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+        .rodape-direitos{
+            h4{
+                font-size: 1.1rem;
+                margin: 0 0 0 1rem;
+
+            }
+            div{
+                margin: 0 1rem 0 0;
+
+                span{
+                    font-size: .9rem;
+
+                }
+                i{
+                    font-size: 1.2rem;
+                                
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 481px) {
+    #rodape{
+        .rodape-midias{
+            flex-direction: column;
+
+            a{
+                width: 100%;
+                
+                span{
+                    font-size: 1.7rem;
+
+                }
+                i{
+                    font-size: 2.7rem;
+                    
+                }
+            }
+        }
+        .rodape-direitos{
+            flex-direction: column-reverse;
+
+            h4{
+                margin: 0;
+                
+                }
+            div{
+                margin: 0 0 .5rem 0;
+                justify-content: center;
+
+                span{
+                    font-size: 1rem;
+
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 360px) {
+  
+}
 </style>
