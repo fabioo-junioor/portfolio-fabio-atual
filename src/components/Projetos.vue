@@ -52,10 +52,17 @@ export default {
                 </div>
             </div>
             <div class="projetos-links">
-                <a :href="i.link" target="_blank">
+                <a
+                    :href="i.link"
+                    target="_blank"
+                    rel="noopener noreferrer">
                     <button :disabled="i.link == ''">Visitar</button>
                 </a>
-                <a v-if="i.repositorio" :href="i.repositorio" target="_blank">
+                <a
+                    v-if="i.repositorio"
+                    :href="i.repositorio"
+                    target="_blank"
+                    rel="noopener noreferrer">
                     <button>Repositório</button>
                 </a>
             </div>
@@ -138,7 +145,7 @@ export default {
                                 color: white;
                                 font-size: .9rem;
                                 margin: .2rem .2rem .2rem 0;
-                                padding: .5rem;
+                                padding: .3rem .5rem;
 
                             }
                         }    
@@ -237,8 +244,8 @@ export default {
                             }    
                             .projetos-tecnologias{
                                 span{
-                                    font-size: .7rem;
-                                    padding: .5rem .3rem;
+                                    font-size: .8rem;
+                                    padding: .3rem .4rem;
 
                                 }
                             }    
@@ -282,7 +289,6 @@ export default {
                             .projetos-tecnologias{
                                 span{
                                     font-size: .7rem;
-                                    padding: .5rem .3rem;
 
                                 }
                             }    

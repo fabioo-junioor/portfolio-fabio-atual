@@ -10,15 +10,15 @@ export default {
 <template>
   <div id="rodape">
     <div class="rodape-midias">
-        <a href="https://www.instagram.com/fabioo.junioor/" target="_blank">
+        <a href="https://www.instagram.com/fabioo.junioor/" target="_blank" rel="noopener noreferrer">
             <span>Instagram</span>
             <i class="pi pi-instagram"></i>
         </a>
-        <a href="https://github.com/fabioo-junioor" target="_blank">
+        <a href="https://github.com/fabioo-junioor" target="_blank" rel="noopener noreferrer">
             <span>Github</span>
             <i class="pi pi-github"></i>
         </a>
-        <a href="https://www.linkedin.com/in/fábio-júnior-237b661b9" target="_blank">
+        <a href="https://www.linkedin.com/in/fábio-júnior-237b661b9" target="_blank" rel="noopener noreferrer">
             <span>Linkedin</span>
             <i class="pi pi-linkedin"></i>
         </a>
