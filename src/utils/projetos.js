@@ -2,7 +2,7 @@ const projetos = [
     {
         id: 1,
         titulo: 'Alquimia Skate Shop',
-        techs: ['Wordpress', 'Elementor', 'Woocommerce', 'CSS'],
+        techs: ['Wordpress', 'Elementor', 'Woocommerce', 'CSS3'],
         tipo: 'Ecommerce',
         imagem: require('../assets/projetos/alquimiaskateshop.png'),
         link: 'https://alquimiaskateshop.com.br/'
@@ -10,7 +10,7 @@ const projetos = [
     {
         id: 2,
         titulo: 'Ecológica Junior',
-        techs: ['Wordpress', 'Elementor', 'CSS'],
+        techs: ['Wordpress', 'Elementor', 'CSS3'],
         tipo: 'Site Institucional',
         imagem: require('../assets/projetos/ecologicajr.png'),
         link: ''
@@ -18,7 +18,7 @@ const projetos = [
     {
         id: 3,
         titulo: 'F5 Junior',
-        techs: ['Wordpress', 'Elementor', 'CSS'],
+        techs: ['Wordpress', 'Elementor', 'CSS3'],
         tipo: 'Site Institucional',
         imagem: require('../assets/projetos/f5junior.png'),
         link: 'https://f5jr.com/'
@@ -26,7 +26,7 @@ const projetos = [
     {
         id: 4,
         titulo: 'Fejers',
-        techs: ['Wordpress', 'Elementor', 'CSS'],
+        techs: ['Wordpress', 'Elementor', 'CSS3'],
         tipo: 'Site Institucional',
         imagem: require('../assets/projetos/fejers.png'),
         link: 'https://fejers.org.br/'
@@ -34,7 +34,7 @@ const projetos = [
     {
         id: 5,
         titulo: 'Nepelin',
-        techs: ['Wordpress', 'Elementor', 'CSS'],
+        techs: ['Wordpress', 'Elementor', 'CSS3'],
         tipo: 'Site Institucional',
         imagem: require('../assets/projetos/nepelin.png'),
         link: 'https://nepelin.com/'
@@ -42,7 +42,7 @@ const projetos = [
     {
         id: 6,
         titulo: 'Nucleo Impulso',
-        techs: ['Wordpress', 'Elementor', 'CSS'],
+        techs: ['Wordpress', 'Elementor', 'CSS3'],
         tipo: 'Site Institucional',
         imagem: require('../assets/projetos/nucleo-impulso-site.png'),
         link: 'https://nucleoimpulso.com.br/'
@@ -50,7 +50,7 @@ const projetos = [
     {
         id: 7,
         titulo: 'Patrimônio Dona Francisca',
-        techs: ['Wordpress', 'Elementor', 'JavaScript', 'CSS'],
+        techs: ['Wordpress', 'Elementor', 'JavaScript', 'CSS3'],
         tipo: 'Site Institucional',
         imagem: require('../assets/projetos/patrimonio-cultural-1.png'),
         link: 'https://patrimoniosdonafrancisca.site/'
@@ -58,7 +58,7 @@ const projetos = [
     {
         id: 8,
         titulo: 'HASupport',
-        techs: ['HTML5', 'CSS3', 'JavaScript', 'Mysql', 'Bootstrap', 'Electron'],
+        techs: ['HTML5', 'CSS3', 'JavaScript', 'MySql', 'Bootstrap', 'Electron'],
         tipo: 'Software Desktop',
         imagem: require('../assets/projetos/imagem-dafault.jpg'),
         link: '',
@@ -67,7 +67,7 @@ const projetos = [
     {
         id: 9,
         titulo: "Portfólio 2020",
-        techs: ['VueJs', 'Vuetify', 'SASS', 'Animate.css', 'Netlify'],
+        techs: ['Vue.Js', 'Vuetify', 'SASS', 'Animate.css', 'Netlify'],
         tipo: 'Site Pessoal',
         imagem: require('../assets/projetos/portfolio2020.png'),
         link: 'https://fabiojuniordev2020.netlify.app/',
@@ -76,7 +76,7 @@ const projetos = [
     {
         id: 10,
         titulo: 'Electoral Partials',
-        techs: ['Kotlin', 'Java', 'PHP', 'Mysql'],
+        techs: ['Kotlin', 'Java', 'PHP', 'MySql'],
         tipo: 'Aplicativo Mobile',
         imagem: require('../assets/projetos/imagem-dafault.jpg'),
         link: '',
@@ -85,7 +85,7 @@ const projetos = [
     {
         id: 11,
         titulo: "Portfólio 2022",
-        techs: ['VueJs', 'Vuetify', 'SASS', 'Animate.css', 'Netlify'],
+        techs: ['Vue.Js', 'Vuetify', 'SASS', 'Animate.css', 'Netlify'],
         tipo: 'Site Pessoal',
         imagem: require('../assets/projetos/portfolio2022.png'),
         link: 'https://fabiojuniordev2022.netlify.app/',
@@ -103,7 +103,7 @@ const projetos = [
     {
         id: 13,
         titulo: 'UniConecta',
-        techs: ['VueJs', 'BootstrapVue', 'SASS', 'VueRouter', 'PHP', 'Mysql', 'Netlify'],
+        techs: ['Vue.Js', 'BootstrapVue', 'SASS', 'VueRouter', 'PHP', 'MySql', 'Netlify'],
         tipo: 'Aplicação de Compartilhamento',
         imagem: require('../assets/projetos/uniconecta.png'),
         link: 'https://uniconecta.netlify.app/',
@@ -112,7 +112,7 @@ const projetos = [
     {
         id: 14,
         titulo: 'Portfólio 2024',
-        techs: ['VueJs', 'BootstrapVue', 'Primevue', 'SASS', 'Vite', 'Netlify'],
+        techs: ['Vue.Js', 'BootstrapVue', 'PrimeVue', 'SASS', 'Vite', 'Netlify'],
         tipo: 'Site Pessoal',
         imagem: require('../assets/projetos/portfolio2024.png'),
         link: 'https://fabiojuniordev.netlify.app/',
@@ -121,7 +121,7 @@ const projetos = [
     {
         id: 15,
         titulo: 'Pokedex',
-        techs: ['VueJs', 'Primevue', 'SASS', 'Vite', 'PokeApi', 'Netlify'],
+        techs: ['Vue.Js', 'PrimeVue', 'SASS', 'Vite', 'PokeApi', 'Netlify'],
         tipo: 'Aplicação Web',
         imagem: require('../assets/projetos/pokedex.png'),
         link: 'https://pokedex-fj.netlify.app/',
@@ -130,7 +130,7 @@ const projetos = [
     {
         id: 16,
         titulo: 'Monty Hall',
-        techs: ['VueJs', 'Netlify'],
+        techs: ['Vue.Js', 'Netlify'],
         tipo: 'Aplicação Web',
         imagem: require('../assets/projetos/monty-hall.png'),
         link: 'https://montyyhall.netlify.app/',
@@ -139,7 +139,7 @@ const projetos = [
     {
         id: 17,
         titulo: 'Calculadora',
-        techs: ['VueJs', 'Netlify'],
+        techs: ['Vue.Js', 'Netlify'],
         tipo: 'Aplicação Web',
         imagem: require('../assets/projetos/calculadora.png'),
         link: 'https://ccalculadora.netlify.app/',
@@ -157,7 +157,7 @@ const projetos = [
     {
         id: 19,
         titulo: 'Mesa Online',
-        techs: ['VueJs', 'SASS', 'Primevue', 'Vite', 'Netlify'],
+        techs: ['Vue.Js', 'SASS', 'PrimeVue', 'Vite', 'Netlify'],
         tipo: 'Aplicação Web',
         imagem: require('../assets/projetos/imagem-dafault.jpg'),
         link: '',

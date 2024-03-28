@@ -8,8 +8,10 @@ export default {
   components: { Carousel, Slide, Navigation, Pagination },
   data(){
     return{
-        projetos: [],
-        itensShow: 2
+        projetos: null,
+        itensShow: 2,
+        botoes: ['Todos', 'Wordpress', 'Elementor', 'Woocommerce', 'HTML5', 'CSS3', 'Vue.Js', 'JavaScript', 'SASS', 'Bootstrap', 'BootstrapVue', 'PrimeVue', 'Vuetify', 'PHP', 'Kotlin', 'MySql', 'Electron', 'Vite', 'Netlify'],
+        botaoAtivado: ''
 
     }
   },
@@ -19,12 +21,47 @@ export default {
             this.itensShow = window.innerWidth <= 720 ? 1 : 2
             
         })
+    },
+    showProjetos(nomeTecnologia){
+        this.botaoAtivado = nomeTecnologia
+        this.alteraCorBotao(nomeTecnologia)
+        if(nomeTecnologia === 'Todos'){
+            this.projetos = projetos
+
+        }else{
+            this.projetos = projetos
+            let newArray = []
+            this.projetos.filter((proj) => {
+                proj.techs.filter((e) => {
+                    if(nomeTecnologia === e){
+                        newArray.push(proj)
+                                    
+                    }
+                })            
+            })
+            this.projetos = []
+            this.projetos = newArray
+
+        }
+    },
+    alteraCorBotao(nomeBotao){
+        let btn = document.getElementsByClassName("projetos-botoes-bt")
+        for(var i=0; i<btn.length; i++){
+            if(btn[i].name === nomeBotao){
+                btn[i].style.color = "white"
+
+            }else{
+                btn[i].style.color = "black"
+
+            }
+        }        
     }
   },
   mounted() {
     this.projetos = projetos
+    this.showProjetos('Todos')
     this.detectaResolusao()
-
+    
   }
 };
 </script>
@@ -32,13 +69,22 @@ export default {
 <template>
   <div id="projetos">
     <h3>Projetos</h3>
+    <div class="projetos-botoes">
+        <button
+            v-for="b in botoes" :key="b"
+            class="projetos-botoes-bt"
+            :name="b"
+            @click="showProjetos(b)">
+            {{b}}
+        </button>
+    </div>
     <Carousel
         :wrap-around="true"
         :items-to-show="itensShow"
         :autoplay="3000"
         :pauseAutoplayOnHover="true"
         :transition="1000">
-      <Slide v-for="i in projetos" :key="i.id">
+      <Slide v-for="i in projetos" :key="i">
         <div class="carousel__item">
             <div class="projetos-imagem">
                 <img :src="i.imagem" />
@@ -95,6 +141,29 @@ export default {
         background-color: rgb(40, 40, 40);
         color: #10e956;
 
+    }
+    .projetos-botoes{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: .5rem;
+        flex-wrap: wrap;
+        padding: .8rem .5rem;
+
+        .projetos-botoes-bt{
+            background-color: #10e956;
+            border: 2px solid #10e956;
+            padding: .3rem;
+            font-family: "Madimi One", sans-serif;
+            color: #333;
+            font-size: .9rem;
+            border-radius: 5px;
+            
+            &:hover{
+                border: 2px solid white;
+
+            }
+        }
     }
     .carousel{
         width: 100%;

@@ -11,7 +11,6 @@ export default{
     },
     mounted(){
         this.techs = tecnologias
-        console.log(this.techs)
 
     }    
 }
