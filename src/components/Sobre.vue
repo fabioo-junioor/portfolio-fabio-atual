@@ -38,7 +38,7 @@ export default {
       </div>
     </div>
     <div class="sobre-imagem">
-      <img class="sobre-draw" src="../assets/imagens/eu2.jpg">
+      <img class="sobre-draw" src="../assets/imagens/eu.jpg">
     </div>
   </div>
 </template>
