@@ -12,15 +12,15 @@ export default {
     <div class="rodape-midias">
         <a href="https://www.instagram.com/fabioo.junioor/" target="_blank" rel="noopener noreferrer">
             <span>Instagram</span>
-            <i class="pi pi-instagram"></i>
+            <i class="pi pi-instagram" title="Instagram"></i>
         </a>
         <a href="https://github.com/fabioo-junioor" target="_blank" rel="noopener noreferrer">
             <span>Github</span>
-            <i class="pi pi-github"></i>
+            <i class="pi pi-github" title="Github"></i>
         </a>
         <a href="https://www.linkedin.com/in/fábio-júnior-237b661b9" target="_blank" rel="noopener noreferrer">
             <span>Linkedin</span>
-            <i class="pi pi-linkedin"></i>
+            <i class="pi pi-linkedin" title="Linkedin"></i>
         </a>
     </div>
     <div class="rodape-direitos">

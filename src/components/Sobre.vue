@@ -16,7 +16,7 @@ export default {
       <h1 class="sobre-titulo">Web Developer Front end</h1>
       <p class="sobre-texto">
         Profissional na área do desenvolvimento web, especializado(a) em html,
-        css, javascript e vuejs. Proativo(a) e orientado(a) para resultados,
+        css, javascript e vue.js. Proativo(a) e orientado(a) para resultados,
         busco contribuir com minha experiência em desenvolvimento web front-end.
         Comprometido(a) com a excelência, estou pronto(a) para integrar uma
         equipe dinâmica e agregar valor. Possuo Técnico em Contabilidade pela
@@ -25,9 +25,20 @@ export default {
         Bacharelado em Sistemas de Informação pela Universidade Federal de Santa
         Maria (2023).
       </p>
+      <div class="sobre-midias">
+        <a href="https://www.instagram.com/fabioo.junioor/" target="_blank" rel="noopener noreferrer">
+            <i class="pi pi-instagram" title="Instagram"></i>
+        </a>
+        <a href="https://github.com/fabioo-junioor" target="_blank" rel="noopener noreferrer">
+            <i class="pi pi-github" title="Github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/fábio-júnior-237b661b9" target="_blank" rel="noopener noreferrer">
+            <i class="pi pi-linkedin" title="Linkedin"></i>
+        </a>
+      </div>
     </div>
     <div class="sobre-imagem">
-      <img class="sobre-draw" src="../assets/imagens/feeling_proud.svg">
+      <img class="sobre-draw" src="../assets/imagens/eu2.jpg">
     </div>
   </div>
 </template>
@@ -74,7 +85,26 @@ export default {
         text-align: justify;
         padding: .5rem 0 0 0;
 
-      }      
+      }
+      .sobre-midias{
+        display: flex;
+        justify-content: flex-end;
+        padding: .5rem 0;
+
+        a{
+          margin: 0 1rem;
+
+          i{
+            font-size: 2rem;
+            color: white;
+
+            &:hover{
+              color: #10e956;
+
+            }                
+          }
+        }
+      }   
     }
     .sobre-imagem{
       width: 50%;
@@ -83,6 +113,8 @@ export default {
       align-items: center;
 
       .sobre-draw{
+        border-radius: 5px;
+        box-shadow: 10px 10px 1px #10e956;
         width: 45%;
 
       }
@@ -141,6 +173,14 @@ export default {
         font-size: 1rem;
 
       }
+      .sobre-midias{
+        a{
+          i{
+            font-size: 1.8rem;
+
+          }
+        }
+      }
     }
     .sobre-imagem{
       .sobre-draw{
@@ -163,6 +203,10 @@ export default {
       .sobre-texto{
         font-size: 1.1rem;
 
+      }
+      .sobre-midias{
+        justify-content: flex-start;
+        
       }
     }
     .sobre-imagem{

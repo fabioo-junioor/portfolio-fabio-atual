@@ -34,6 +34,7 @@ export default {
 
   .navbar{
     height: 100%;
+    box-shadow: 0px 2px 10px rgba(255, 255, 255, .8);
 
     .p-button{
       margin: 0 0 .5rem 1rem;
