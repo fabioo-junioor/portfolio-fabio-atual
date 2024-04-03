@@ -81,9 +81,9 @@ export default {
     <Carousel
         :wrap-around="true"
         :items-to-show="itensShow"
-        :autoplay="3000"
+        :autoplay="2000"
         :pauseAutoplayOnHover="true"
-        :transition="1000">
+        :transition="1500">
       <Slide v-for="i in projetos" :key="i">
         <div class="carousel__item">
             <div class="projetos-imagem">
