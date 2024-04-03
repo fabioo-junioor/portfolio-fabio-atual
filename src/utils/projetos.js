@@ -162,6 +162,15 @@ const projetos = [
         imagem: require('../assets/projetos/imagem-dafault.jpg'),
         link: '',
         repositorio: 'https://github.com/fabioo-junioor/mesaOnline'
+    },
+    {
+        id: 20,
+        titulo: 'Facemash',
+        techs: ['Vue.Js', 'SASS', 'Vite', 'Netlify'],
+        tipo: 'Aplicação web',
+        imagem: require('../assets/projetos/facemash.png'),
+        link: 'https://ffacemash.netlify.app/',
+        repositorio: 'https://github.com/fabioo-junioor/facemash'
     }
 ]
 

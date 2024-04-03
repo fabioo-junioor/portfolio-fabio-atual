@@ -10,7 +10,7 @@ export default {
     return{
         projetos: null,
         itensShow: 2,
-        botoes: ['Todos', 'Wordpress', 'Elementor', 'Woocommerce', 'HTML5', 'CSS3', 'Vue.Js', 'JavaScript', 'SASS', 'Bootstrap', 'BootstrapVue', 'PrimeVue', 'Vuetify', 'PHP', 'Kotlin', 'MySql', 'Electron', 'Vite', 'Netlify'],
+        botoes: ['Todos', 'Wordpress', 'Elementor', 'Woocommerce', 'HTML5', 'CSS3', 'Vue.Js', 'JavaScript', 'SASS', 'Bootstrap', 'BootstrapVue', 'PrimeVue', 'Vuetify', 'PHP', 'Kotlin', 'MySql', 'Electron', 'Netlify'],
         botaoAtivado: ''
 
     }
