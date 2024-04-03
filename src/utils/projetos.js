@@ -5,7 +5,8 @@ const projetos = [
         techs: ['Wordpress', 'Elementor', 'Woocommerce', 'CSS3'],
         tipo: 'Ecommerce',
         imagem: require('../assets/projetos/alquimiaskateshop.png'),
-        link: 'https://alquimiaskateshop.com.br/'
+        link: 'https://alquimiaskateshop.com.br/',
+        desenvolvimento: false
     },
     {
         id: 2,
@@ -13,7 +14,8 @@ const projetos = [
         techs: ['Wordpress', 'Elementor', 'CSS3'],
         tipo: 'Site Institucional',
         imagem: require('../assets/projetos/ecologicajr.png'),
-        link: ''
+        link: '',
+        desenvolvimento: false
     },
     {
         id: 3,
@@ -21,7 +23,8 @@ const projetos = [
         techs: ['Wordpress', 'Elementor', 'CSS3'],
         tipo: 'Site Institucional',
         imagem: require('../assets/projetos/f5junior.png'),
-        link: 'https://f5jr.com/'
+        link: 'https://f5jr.com/',
+        desenvolvimento: false
     },
     {
         id: 4,
@@ -29,7 +32,8 @@ const projetos = [
         techs: ['Wordpress', 'Elementor', 'CSS3'],
         tipo: 'Site Institucional',
         imagem: require('../assets/projetos/fejers.png'),
-        link: 'https://fejers.org.br/'
+        link: 'https://fejers.org.br/',
+        desenvolvimento: false
     },
     {
         id: 5,
@@ -37,7 +41,8 @@ const projetos = [
         techs: ['Wordpress', 'Elementor', 'CSS3'],
         tipo: 'Site Institucional',
         imagem: require('../assets/projetos/nepelin.png'),
-        link: 'https://nepelin.com/'
+        link: 'https://nepelin.com/',
+        desenvolvimento: false
     },
     {
         id: 6,
@@ -45,7 +50,8 @@ const projetos = [
         techs: ['Wordpress', 'Elementor', 'CSS3'],
         tipo: 'Site Institucional',
         imagem: require('../assets/projetos/nucleo-impulso-site.png'),
-        link: 'https://nucleoimpulso.com.br/'
+        link: 'https://nucleoimpulso.com.br/',
+        desenvolvimento: false
     },
     {
         id: 7,
@@ -53,7 +59,8 @@ const projetos = [
         techs: ['Wordpress', 'Elementor', 'JavaScript', 'CSS3'],
         tipo: 'Site Institucional',
         imagem: require('../assets/projetos/patrimonio-cultural-1.png'),
-        link: 'https://patrimoniosdonafrancisca.site/'
+        link: 'https://patrimoniosdonafrancisca.site/',
+        desenvolvimento: false
     },
     {
         id: 8,
@@ -62,7 +69,8 @@ const projetos = [
         tipo: 'Software Desktop',
         imagem: require('../assets/projetos/imagem-dafault.jpg'),
         link: '',
-        repositorio: 'https://github.com/fabioo-junioor/HA--ASSIST'
+        repositorio: 'https://github.com/fabioo-junioor/HA--ASSIST',
+        desenvolvimento: false
     },
     {
         id: 9,
@@ -71,7 +79,8 @@ const projetos = [
         tipo: 'Site Pessoal',
         imagem: require('../assets/projetos/portfolio2020.png'),
         link: 'https://fabiojuniordev2020.netlify.app/',
-        repositorio: 'https://github.com/fabioo-junioor/portfolio-fabio-2020'
+        repositorio: 'https://github.com/fabioo-junioor/portfolio-fabio-2020',
+        desenvolvimento: false
     },
     {
         id: 10,
@@ -80,7 +89,8 @@ const projetos = [
         tipo: 'Aplicativo Mobile',
         imagem: require('../assets/projetos/imagem-dafault.jpg'),
         link: '',
-        repositorio: 'https://github.com/fabioo-junioor/project-app-electoral-partials'
+        repositorio: 'https://github.com/fabioo-junioor/project-app-electoral-partials',
+        desenvolvimento: false
     },
     {
         id: 11,
@@ -89,7 +99,8 @@ const projetos = [
         tipo: 'Site Pessoal',
         imagem: require('../assets/projetos/portfolio2022.png'),
         link: 'https://fabiojuniordev2022.netlify.app/',
-        repositorio: 'https://github.com/fabioo-junioor/portfolio-fabio-2022'
+        repositorio: 'https://github.com/fabioo-junioor/portfolio-fabio-2022',
+        desenvolvimento: false
     },
     {
         id: 12,
@@ -98,7 +109,8 @@ const projetos = [
         tipo: 'Jogo da Memória Web',
         imagem: require('../assets/projetos/memorias-do-passado.png'),
         link: 'https://memoriasdopassado.netlify.app/',
-        repositorio: 'https://github.com/fabioo-junioor/memorias-do-passado'
+        repositorio: 'https://github.com/fabioo-junioor/memorias-do-passado',
+        desenvolvimento: false
     },
     {
         id: 13,
@@ -107,7 +119,8 @@ const projetos = [
         tipo: 'Aplicação de Compartilhamento',
         imagem: require('../assets/projetos/uniconecta.png'),
         link: 'https://uniconecta.netlify.app/',
-        repositorio: 'https://github.com/fabioo-junioor/uniConecta'
+        repositorio: 'https://github.com/fabioo-junioor/uniConecta',
+        desenvolvimento: false
     },
     {
         id: 14,
@@ -116,7 +129,8 @@ const projetos = [
         tipo: 'Site Pessoal',
         imagem: require('../assets/projetos/portfolio2024.png'),
         link: 'https://fabiojuniordev.netlify.app/',
-        repositorio: 'https://github.com/fabioo-junioor/portfolio-fabio-atual'
+        repositorio: 'https://github.com/fabioo-junioor/portfolio-fabio-atual',
+        desenvolvimento: false
     },
     {
         id: 15,
@@ -125,7 +139,8 @@ const projetos = [
         tipo: 'Aplicação Web',
         imagem: require('../assets/projetos/pokedex.png'),
         link: 'https://pokedex-fj.netlify.app/',
-        repositorio: 'https://github.com/fabioo-junioor/pokedex'
+        repositorio: 'https://github.com/fabioo-junioor/pokedex',
+        desenvolvimento: false
     },
     {
         id: 16,
@@ -134,7 +149,8 @@ const projetos = [
         tipo: 'Aplicação Web',
         imagem: require('../assets/projetos/monty-hall.png'),
         link: 'https://montyyhall.netlify.app/',
-        repositorio: 'https://github.com/fabioo-junioor/monty-hall'
+        repositorio: 'https://github.com/fabioo-junioor/monty-hall',
+        desenvolvimento: false
     },
     {
         id: 17,
@@ -143,7 +159,8 @@ const projetos = [
         tipo: 'Aplicação Web',
         imagem: require('../assets/projetos/calculadora.png'),
         link: 'https://ccalculadora.netlify.app/',
-        repositorio: 'https://github.com/fabioo-junioor/calculadora'
+        repositorio: 'https://github.com/fabioo-junioor/calculadora',
+        desenvolvimento: false
     },
     {
         id: 18,
@@ -152,7 +169,8 @@ const projetos = [
         tipo: 'Jogo Web',
         imagem: require('../assets/projetos/game-hush.png'),
         link: 'https://julianopasa.itch.io/procrastinator-rush',
-        repositorio: 'https://github.com/fabioo-junioor/game-rush'
+        repositorio: 'https://github.com/fabioo-junioor/game-rush',
+        desenvolvimento: false
     },
     {
         id: 19,
@@ -161,7 +179,8 @@ const projetos = [
         tipo: 'Aplicação Web',
         imagem: require('../assets/projetos/imagem-dafault.jpg'),
         link: '',
-        repositorio: 'https://github.com/fabioo-junioor/mesaOnline'
+        repositorio: '',
+        desenvolvimento: true
     },
     {
         id: 20,
@@ -170,7 +189,8 @@ const projetos = [
         tipo: 'Aplicação web',
         imagem: require('../assets/projetos/facemash.png'),
         link: 'https://ffacemash.netlify.app/',
-        repositorio: 'https://github.com/fabioo-junioor/facemash'
+        repositorio: 'https://github.com/fabioo-junioor/facemash',
+        desenvolvimento: true
     }
 ]
 

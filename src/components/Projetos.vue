@@ -89,6 +89,8 @@ export default {
       <Slide v-for="i in projetos" :key="i">
         <div class="carousel__item">
             <div class="projetos-imagem">
+                <p class="tag-progresso"
+                    v-if="i.desenvolvimento">Em desenvolvimento</p>
                 <img :src="i.imagem" />
             </div>
             <div class="projetos-detalhes">
@@ -185,7 +187,21 @@ export default {
                         height: 20rem;
                         border-bottom: 2px solid #333;
                         margin: 0 0 .3rem 0;
-    
+                        display: inline-block;
+                        position: relative;
+
+                        .tag-progresso{
+                            background-color: #333333;
+                            color: white;
+                            font-size: .9rem;
+                            padding: .1rem .5rem;
+                            border-radius: 10px;
+                            border: 1px solid rgba(255, 255, 255, .5);
+                            position: absolute;
+                            right: .5rem;
+                            top: .5rem;
+                        
+                        }    
                         img{
                             width: 100%;
                             height: 100%;
