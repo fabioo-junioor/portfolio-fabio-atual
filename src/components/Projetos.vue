@@ -1,5 +1,6 @@
 <script>
 import projetos from '../utils/projetos.js'
+import { botoes } from '../utils/tecnologias.js'
 import "vue3-carousel/dist/carousel.css";
 import { Carousel, Slide, Navigation, Pagination } from "vue3-carousel";
 
@@ -10,7 +11,7 @@ export default {
     return{
         projetos: null,
         itensShow: 2,
-        botoes: ['Todos', 'Wordpress', 'Elementor', 'Woocommerce', 'HTML5', 'CSS3', 'Vue.Js', 'JavaScript', 'SASS', 'Bootstrap', 'BootstrapVue', 'PrimeVue', 'Vuetify', 'PHP', 'Kotlin', 'MySql', 'Electron', 'Netlify'],
+        botoes: [],
         botaoAtivado: ''
 
     }
@@ -59,6 +60,7 @@ export default {
   },
   mounted() {
     this.projetos = projetos
+    this.botoes = botoes
     this.showProjetos('Todos')
     this.detectaResolusao()
     

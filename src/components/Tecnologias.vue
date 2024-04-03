@@ -1,5 +1,5 @@
 <script>
-import tecnologias from '../utils/tecnologias.js'
+import { techs } from '../utils/tecnologias.js'
 
 export default{
     name: 'Tecnologias',
@@ -10,7 +10,7 @@ export default{
         }
     },
     mounted(){
-        this.techs = tecnologias
+        this.techs = techs
 
     }    
 }

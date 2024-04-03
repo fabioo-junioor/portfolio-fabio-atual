@@ -17,4 +17,6 @@ const techs = [
     {nome: 'Netlify', img: require('../assets/tecnologias/netlify.png')}
 ]
 
-export default techs;
+const botoes = ['Todos', 'Wordpress', 'Elementor', 'Woocommerce', 'HTML5', 'CSS3', 'Vue.Js', 'JavaScript', 'SASS', 'Bootstrap', 'BootstrapVue', 'PrimeVue', 'Vuetify', 'PHP', 'Kotlin', 'MySql', 'Electron', 'Netlify']
+
+export { techs, botoes };
