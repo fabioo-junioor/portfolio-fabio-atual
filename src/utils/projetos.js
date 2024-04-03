@@ -64,10 +64,10 @@ const projetos = [
     },
     {
         id: 8,
-        titulo: 'HASupport',
+        titulo: 'HA Assist',
         techs: ['HTML5', 'CSS3', 'JavaScript', 'MySql', 'Bootstrap', 'Electron'],
         tipo: 'Software Desktop',
-        imagem: require('../assets/projetos/imagem-dafault.jpg'),
+        imagem: require('../assets/projetos/ha-assist.png'),
         link: '',
         repositorio: 'https://github.com/fabioo-junioor/HA--ASSIST',
         desenvolvimento: false
