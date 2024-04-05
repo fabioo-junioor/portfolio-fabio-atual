@@ -185,7 +185,7 @@ const projetos = [
     {
         id: 20,
         titulo: 'Facemash',
-        techs: ['Vue.Js', 'SASS', 'Vite', 'Netlify'],
+        techs: ['Vue.Js', 'SASS', 'Vite', 'Netlify', 'Firebase'],
         tipo: 'Aplicação web',
         imagem: require('../assets/projetos/facemash.png'),
         link: 'https://ffacemash.netlify.app/',

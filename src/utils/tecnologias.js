@@ -11,12 +11,12 @@ const techs = [
     {nome: 'Linguagem C', img: require('../assets/tecnologias/c.png')},
     {nome: 'PHP', img: require('../assets/tecnologias/php.png')},
     {nome: 'MySql', img: require('../assets/tecnologias/mysql.png')},
-    {nome: 'Scrum', img: require('../assets/tecnologias/scrum.png')},
+    {nome: 'Scrum/Kanban', img: require('../assets/tecnologias/scrum.png')},
     {nome: 'Wordpress', img: require('../assets/tecnologias/wordpress.png')},
-    {nome: 'Github', img: require('../assets/tecnologias/github.png')},
+    {nome: 'Git/Github', img: require('../assets/tecnologias/github.png')},
     {nome: 'Netlify', img: require('../assets/tecnologias/netlify.png')}
 ]
 
-const botoes = ['Todos', 'Wordpress', 'Elementor', 'Woocommerce', 'HTML5', 'CSS3', 'Vue.Js', 'JavaScript', 'SASS', 'Bootstrap', 'BootstrapVue', 'PrimeVue', 'Vuetify', 'PHP', 'Kotlin', 'MySql', 'Electron', 'Netlify']
+const botoes = ['Todos', 'Wordpress', 'Elementor', 'Woocommerce', 'HTML5', 'CSS3', 'Vue.Js', 'JavaScript', 'SASS', 'Bootstrap', 'BootstrapVue', 'PrimeVue', 'Vuetify', 'PHP', 'Kotlin', 'MySql', 'Electron', 'Netlify', 'Firebase']
 
 export { techs, botoes };
