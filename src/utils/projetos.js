@@ -138,7 +138,7 @@ const projetos = [
         techs: ['Vue.Js', 'PrimeVue', 'SASS', 'Vite', 'PokeApi', 'Netlify'],
         tipo: 'Aplicação Web',
         imagem: require('../assets/projetos/pokedex.png'),
-        link: 'https://pokedex-fj.netlify.app/',
+        link: 'https://pokkkedex.netlify.app/',
         repositorio: 'https://github.com/fabioo-junioor/pokedex',
         desenvolvimento: false
     },
