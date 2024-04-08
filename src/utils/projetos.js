@@ -178,7 +178,7 @@ const projetos = [
         techs: ['Vue.Js', 'SASS', 'PrimeVue', 'Vite', 'Netlify'],
         tipo: 'Aplicação Web',
         imagem: require('../assets/projetos/imagem-dafault.jpg'),
-        link: '',
+        link: 'https://mesaonline.netlify.app/',
         repositorio: '',
         desenvolvimento: true
     },
@@ -190,7 +190,7 @@ const projetos = [
         imagem: require('../assets/projetos/facemash.png'),
         link: 'https://ffacemash.netlify.app/',
         repositorio: 'https://github.com/fabioo-junioor/facemash',
-        desenvolvimento: true
+        desenvolvimento: false
     }
 ]
 
