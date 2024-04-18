@@ -175,7 +175,7 @@ const projetos = [
     {
         id: 19,
         titulo: 'Mesa Online',
-        techs: ['Vue.Js', 'SASS', 'PrimeVue', 'Vite', 'Netlify'],
+        techs: ['Vue.Js', 'SASS', 'PrimeVue', 'PHP', 'MySql', 'Vite', 'Netlify'],
         tipo: 'Aplicação Web',
         imagem: require('../assets/projetos/imagem-dafault.jpg'),
         link: 'https://mesaonline.netlify.app/',
