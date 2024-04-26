@@ -10,23 +10,23 @@ export default {
   data(){
     return{
         projetos: null,
-        itensShow: 2,
-        botoes: [],
-        botaoAtivado: ''
+        itensShow: 3,
+        selectTechs: null,
+        options: null,
 
     }
   },
   methods: {
     detectaResolusao(){
         window.addEventListener('resize', () => {
-            this.itensShow = window.innerWidth <= 720 ? 1 : 2
+            this.itensShow = window.innerWidth <= 720 ? 1 : 3
             
         })
+        this.itensShow = window.innerWidth <= 720 ? 1 : 3
+
     },
     showProjetos(nomeTecnologia){
-        this.botaoAtivado = nomeTecnologia
-        this.alteraCorBotao(nomeTecnologia)
-        if(nomeTecnologia === 'Todos'){
+        if((nomeTecnologia === 'Todos') || (nomeTecnologia === null)){
             this.projetos = projetos
 
         }else{
@@ -36,34 +36,27 @@ export default {
                 proj.techs.filter((e) => {
                     if(nomeTecnologia === e){
                         newArray.push(proj)
-                                    
+
                     }
-                })            
+                })
             })
             this.projetos = []
             this.projetos = newArray
-
         }
-    },
-    alteraCorBotao(nomeBotao){
-        let btn = document.getElementsByClassName("projetos-botoes-bt")
-        for(var i=0; i<btn.length; i++){
-            if(btn[i].name === nomeBotao){
-                btn[i].style.color = "white"
-
-            }else{
-                btn[i].style.color = "black"
-
-            }
-        }        
     }
   },
   mounted() {
     this.projetos = projetos
-    this.botoes = botoes
+    this.options = botoes
     this.showProjetos('Todos')
     this.detectaResolusao()
     
+  },
+  watch: {
+    selectTechs: function(e){
+        this.showProjetos(e)
+
+    }
   }
 };
 </script>
@@ -71,14 +64,10 @@ export default {
 <template>
   <div id="projetos">
     <h3>Projetos</h3>
-    <div class="projetos-botoes">
-        <button
-            v-for="b in botoes" :key="b"
-            class="projetos-botoes-bt"
-            :name="b"
-            @click="showProjetos(b)">
-            {{b}}
-        </button>
+    <div class="projetos-select">
+        <b-form-select
+            v-model="selectTechs"
+            :options="options"></b-form-select>
     </div>
     <Carousel
         :wrap-around="true"
@@ -95,6 +84,10 @@ export default {
             </div>
             <div class="projetos-detalhes">
                 <h4>{{ i.titulo }}</h4>
+                <p 
+                    v-if="i.descricao">{{ i.descricao }}</p>
+                <span
+                    v-if="i.descricao">*Descrição Completa no Repositório*</span>
                 <div class="projetos-tecnologias">
                     <span
                         v-for="t in i.techs"
@@ -146,25 +139,23 @@ export default {
         color: #10e956;
 
     }
-    .projetos-botoes{
+    .projetos-select{
         width: 100%;
         display: flex;
         justify-content: center;
-        gap: .5rem;
-        flex-wrap: wrap;
         padding: .8rem .5rem;
 
-        .projetos-botoes-bt{
-            background-color: #10e956;
-            border: 2px solid #10e956;
-            padding: .3rem;
-            font-family: "Madimi One", sans-serif;
-            color: #333;
-            font-size: .9rem;
+        select{
+            width: 50%;
+            background-color: #333;
             border-radius: 5px;
-            
-            &:hover{
-                border: 2px solid white;
+            border-bottom: 3px solid white;
+            height: 3rem;
+            color: white;
+
+            option{
+                color: white;
+                font-size: 1rem;
 
             }
         }
@@ -184,7 +175,7 @@ export default {
     
                     .projetos-imagem{
                         width: 100%;
-                        height: 20rem;
+                        height: 15rem;
                         border-bottom: 2px solid #333;
                         margin: 0 0 .3rem 0;
                         display: inline-block;
@@ -212,7 +203,7 @@ export default {
                     }
                     .projetos-detalhes{
                         text-align: left;
-                        margin: 0 0 1.5rem .5rem;
+                        margin: 0 .1rem 1.5rem .1rem;
     
                         h4{
                             padding: .5rem 0;
@@ -221,8 +212,28 @@ export default {
                             font-size: 1.5rem;
                             text-shadow: 1px 1px 2px #333;
     
-                        }    
+                        }
+                        p{
+                            text-align: justify;
+                            font-size: .9rem;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 2;
+                            -webkit-box-orient: vertical;
+                            margin: 0;
+
+                        } 
+                        span{
+                            font-size: .8rem;
+                            color: #333;
+                            padding: .1rem;
+                            background-color: rgba(0, 0, 0, .1);
+                            border-radius: 5px;
+
+                        }
                         .projetos-tecnologias{
+                            margin: .5rem 0 0 0;
                             display: flex;
                             flex-wrap: wrap;
 
@@ -230,9 +241,9 @@ export default {
                                 background-color:  black;
                                 border-radius: 5px;
                                 color: white;
-                                font-size: .9rem;
+                                font-size: .8rem;
                                 margin: .2rem .2rem .2rem 0;
-                                padding: .3rem .5rem;
+                                padding: .2rem .5rem;
 
                             }
                         }    
@@ -313,14 +324,16 @@ export default {
 }
 @media only screen and (max-width: 720px) {
     #projetos{
+        .projetos-select{
+            select{
+                width: 70%;
+                
+            }
+        }
         .carousel{
             .carousel__viewport{
                 .carousel__slide{    
                     .carousel__item{  
-                        .projetos-imagem{
-                            height: 15rem;
-    
-                        }
                         .projetos-detalhes{
                             margin: 0 0 1rem .2rem;
         
@@ -328,11 +341,19 @@ export default {
                                 padding: .5rem 0;
                                 font-size: 1.2rem;
         
-                            }    
+                            }
+                            p{
+                                font-size: .8rem;
+
+                            }
+                            span{
+                                font-size: .7rem;
+
+                            }  
                             .projetos-tecnologias{
                                 span{
                                     font-size: .8rem;
-                                    padding: .3rem .4rem;
+                                    padding: .2rem .4rem;
 
                                 }
                             }    
@@ -357,6 +378,12 @@ export default {
 }
 @media only screen and (max-width: 481px) {
     #projetos{
+        .projetos-select{
+            select{
+                width: 100%;
+
+            }
+        }
         .carousel{
             .carousel__viewport{
                 .carousel__slide{    
