@@ -147,15 +147,16 @@ export default {
 
         select{
             width: 50%;
-            background-color: #333;
+            background-color: rgb(40, 40, 40);
             border-radius: 5px;
             border-bottom: 3px solid white;
-            height: 3rem;
+            height: 3.5rem;
             color: white;
 
             option{
                 color: white;
                 font-size: 1rem;
+                font-weight: normal;
 
             }
         }
@@ -327,7 +328,7 @@ export default {
         .projetos-select{
             select{
                 width: 70%;
-                
+
             }
         }
         .carousel{

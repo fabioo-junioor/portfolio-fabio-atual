@@ -185,7 +185,7 @@ const projetos = [
         descricao: 'Este é um projeto que desenvolvi chamado Mesa Online, é uma aplicação web que consome dados de uma API desenvolvida em PHP e os exibe em um layout intuitivo e atraente criado em VueJs. Todo projeto foi desenvolvido de forma responsiva para melhor adaptação em diversos dispositivos. A Mesa Online é uma ferramenta que foi desenvolvida para proporcionar aos usuários reservarem lugares em estabelecimento comercias como: restaurantes, pubs, bares, etc. Os estabelecimentos podem efetuar seu cadastro e disponibilizar informções pertinentes para que usuário possam reservar um os mais lugares com rapidez sem a necessidade de esperar o retorno de um funcionário.',
         techs: ['Vue.Js', 'SASS', 'BootstrapVue', 'VueRouter', 'PHP', 'MySql', 'Vite', 'Netlify'],
         tipo: 'Aplicação Web',
-        imagem: require('../assets/projetos/imagem-dafault.jpg'),
+        imagem: require('../assets/projetos/mesa-online.png'),
         link: 'https://mesaonline.netlify.app/',
         repositorio: '',
         desenvolvimento: true
@@ -194,7 +194,7 @@ const projetos = [
         id: 20,
         titulo: 'Facemash',
         descricao: 'Este é um projeto que desenvolvi chamado Facemash, é uma aplicação web que consome dados de uma API e os exibe em um layout intuitivo e atraente. Todo projeto foi desenvolvido de forma responsiva para melhor adaptação em diversos dispositivos. O Facemash é uma ferramenta para o usuário votar no seu personagem favorito da saga Harry Potter. Utilizando a API pública chamada potterDB, o projeto oferece uma interface amigável para visualizar detalhes sobre os personagens, com seu nome e espécie. Cada voto é computado e salvo em um banco de dados no firebase.',
-        techs: ['Vue.Js', 'SASS', 'Vite', 'Netlify', 'Firebase'],
+        techs: ['Vue.Js', 'SASS', 'Vite', 'Firebase', 'Netlify'],
         tipo: 'Aplicação web',
         imagem: require('../assets/projetos/facemash.png'),
         link: 'https://ffacemash.netlify.app/',
