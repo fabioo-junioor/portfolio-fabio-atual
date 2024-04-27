@@ -426,6 +426,10 @@ export default {
                 }
             }
             .carousel__pagination{
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+
                 .carousel__pagination-button::after{
                     padding: .3px;
 
@@ -435,6 +439,6 @@ export default {
     }
 }
 @media only screen and (max-width: 360px) {
-  
+
 }
 </style>
