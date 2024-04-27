@@ -33,6 +33,7 @@ const botoes = [
     { value: 'Vuetify', text: 'Vuetify' },
     { value: 'PHP', text: 'PHP' },
     { value: 'Kotlin', text: 'Kotlin' },
+    { value: 'Java', text: 'Java' },
     { value: 'MySql', text: 'MySql' },
     { value: 'Electron', text: 'Electron' },
     { value: 'Netlify', text: 'Netlify' },

@@ -65,7 +65,8 @@ const projetos = [
     {
         id: 8,
         titulo: 'HA Assist',
-        techs: ['HTML5', 'CSS3', 'JavaScript', 'MySql', 'Bootstrap', 'Electron'],
+        descricao: 'Este é um projeto que desenvolvi chamado Ha Assist, é um software desktop que foi idealizada para uma disciplina da faculdade chamada Projeto de Software 2 - UFSM. Todo projeto foi desenvolvido de forma responsiva para melhor adaptação em diversos dispositivos. A ideia principal desse software é facilitar o cadastro de paciêntes que sofrem de hipertensão arterial por parte das infermeiras nos postos de saúde.',
+        techs: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap', 'MySql', 'Electron'],
         tipo: 'Software Desktop',
         imagem: require('../assets/projetos/ha-assist.png'),
         link: '',
@@ -86,9 +87,10 @@ const projetos = [
     {
         id: 10,
         titulo: 'Electoral Partials',
+        descricao: 'Este é um projeto que desenvolvi chamado Electoral Partials, é um aplicativo mobile que foi idealizada para uma disciplina da faculdade chamada Projeto e Gerência de Banco de Dados - UFSM. Todo projeto foi desenvolvido de forma responsiva para melhor adaptação em diversos dispositivos. A ideia principal desse aplicativo é proporcinar ao usuário um meio mais eficiênte de divulgação das parciais eleitorais, sem a necessidade de esperar a urna chegar ao TE e os dados seram lançados no site. O usuário que tiver acesso ao boletim de urna podera imediatamente cadastrar os dados e divulga-los.',
         techs: ['Kotlin', 'Java', 'PHP', 'MySql'],
         tipo: 'Aplicativo Mobile',
-        imagem: require('../assets/projetos/imagem-dafault.jpg'),
+        imagem: require('../assets/projetos/electoral-partials.png'),
         link: '',
         repositorio: 'https://github.com/fabioo-junioor/project-app-electoral-partials',
         desenvolvimento: false
@@ -151,6 +153,7 @@ const projetos = [
     {
         id: 16,
         titulo: 'Monty Hall',
+        descricao: 'Este é um projeto que desenvolvi chamado Monty Hall, é um jogo web que foi idealizada para praticar o desenvolvimento frontend. Todo projeto foi desenvolvido de forma responsiva para melhor adaptação em diversos dispositivos. A ideia principal desse jogo é proporcionar ao usuário a definição de quantas portas haverá e posteriormente o mesmo acertar em qual delas á um presente. Toda vez que a partida inicia/reinicia o presente é sorteado de forma randômica entre as portas.',
         techs: ['Vue.Js', 'Netlify'],
         tipo: 'Aplicação Web',
         imagem: require('../assets/projetos/monty-hall.png'),
@@ -172,6 +175,7 @@ const projetos = [
     {
         id: 18,
         titulo: 'Game Hush',
+        descricao: 'Este é um projeto que desenvolvi chamado Game Rush, é um jogo web que foi idealizada para uma disciplina da faculdade chamada Paradigmas de Programação - UFSM. A ideia principal desse jogo é proporcionar ao usuário diversão enquanto o mesmo conduz o estudante na busca por conhecimento conletando livros ao longo do percurso. O estudante deverá coletar um numero determinado de livros até o final do percurso.',
         techs: ['Java', 'Libgdx', 'Itch.io'],
         tipo: 'Jogo Web',
         imagem: require('../assets/projetos/game-hush.png'),
