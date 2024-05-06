@@ -29,6 +29,7 @@ const botoes = [
     { value: 'JavaScript', text: 'JavaScript' },
     { value: 'Bootstrap', text: 'Bootstrap' },
     { value: 'BootstrapVue', text: 'BootstrapVue' },
+    { value: 'Quasar', text: 'Quasar' },
     { value: 'PrimeVue', text: 'PrimeVue' },
     { value: 'Vuetify', text: 'Vuetify' },
     { value: 'PHP', text: 'PHP' },
