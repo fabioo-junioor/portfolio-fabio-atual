@@ -18,7 +18,7 @@ export default {
             <span>Github</span>
             <i class="pi pi-github" title="Github"></i>
         </a>
-        <a href="https://www.linkedin.com/in/fábio-júnior-237b661b9" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/fabioo-junioor/" target="_blank" rel="noopener noreferrer">
             <span>Linkedin</span>
             <i class="pi pi-linkedin" title="Linkedin"></i>
         </a>
