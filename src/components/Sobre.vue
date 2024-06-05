@@ -13,12 +13,12 @@ export default {
       <h1 class="sobre-nome">Olá, meu nome é Fábio!
         <img class="sobre-gif-tempo" src="../assets/gifs/tempo.gif">
       </h1>
-      <h1 class="sobre-titulo">Web Developer Front end</h1>
+      <h1 class="sobre-titulo">Web Developer Frontend</h1>
       <p class="sobre-texto">
-        Profissional na área do desenvolvimento web, especializado(a) em html,
-        css, javascript e vue.js. Proativo(a) e orientado(a) para resultados,
-        busco contribuir com minha experiência em desenvolvimento web front-end.
-        Comprometido(a) com a excelência, estou pronto(a) para integrar uma
+        Profissional na área do desenvolvimento web, especializado em html,
+        css, javascript e vue.js. Proativo e orientado para resultados,
+        busco contribuir com minha experiência em desenvolvimento web frontend.
+        Comprometido com a excelência, estou pronto para integrar uma
         equipe dinâmica e agregar valor. Possuo Técnico em Contabilidade pela
         Instituição Federal Sul-Riograndense (2015), Técnico em Informática para
         Internet pelo Colégio Técnico Industrial de Santa Maria (2016) e
@@ -32,7 +32,7 @@ export default {
         <a href="https://github.com/fabioo-junioor" target="_blank" rel="noopener noreferrer">
             <i class="pi pi-github" title="Github"></i>
         </a>
-        <a href="https://www.linkedin.com/in/fábio-júnior-237b661b9" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/fabioo-junioor/" target="_blank" rel="noopener noreferrer">
             <i class="pi pi-linkedin" title="Linkedin"></i>
         </a>
       </div>
