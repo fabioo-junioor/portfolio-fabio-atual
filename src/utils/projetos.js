@@ -187,11 +187,11 @@ const projetos = [
         id: 19,
         titulo: 'Mesa Online',
         descricao: 'Este é um projeto que desenvolvi chamado Mesa Online, é uma aplicação web que consome dados de uma API desenvolvida em PHP e os exibe em um layout intuitivo e atraente criado em VueJs. Todo projeto foi desenvolvido de forma responsiva para melhor adaptação em diversos dispositivos. A Mesa Online é uma ferramenta que foi desenvolvida para proporcionar aos usuários reservarem lugares em estabelecimento comercias como: restaurantes, pubs, bares, etc. Os estabelecimentos podem efetuar seu cadastro e disponibilizar informções pertinentes para que usuário possam reservar um os mais lugares com rapidez sem a necessidade de esperar o retorno de um funcionário.',
-        techs: ['Vue.Js', 'SASS', 'Quasar', 'VueRouter', 'PHP', 'MySql', 'Vite', 'Netlify'],
+        techs: ['Vue.Js', 'SASS', 'Quasar', 'VueRouter', 'Node.js', 'MySql', 'Vite', 'Netlify'],
         tipo: 'Aplicação Web',
         imagem: require('../assets/projetos/mesa-online.png'),
         link: 'https://mesaonline.netlify.app/',
-        repositorio: '',
+        repositorio: 'https://github.com/fabioo-junioor/mesa-online',
         desenvolvimento: true
     },
     {
