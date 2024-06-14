@@ -33,6 +33,7 @@ const botoes = [
     { value: 'PrimeVue', text: 'PrimeVue' },
     { value: 'Vuetify', text: 'Vuetify' },
     { value: 'PHP', text: 'PHP' },
+    { value: 'Node.Js', text: 'Node.Js' },
     { value: 'Kotlin', text: 'Kotlin' },
     { value: 'Java', text: 'Java' },
     { value: 'MySql', text: 'MySql' },
