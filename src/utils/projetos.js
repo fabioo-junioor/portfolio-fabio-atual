@@ -204,6 +204,17 @@ const projetos = [
         link: 'https://ffacemash.netlify.app/',
         repositorio: 'https://github.com/fabioo-junioor/facemash',
         desenvolvimento: false
+    },
+    {
+        id: 21,
+        titulo: 'Deep Space Store',
+        descricao: 'Este é um projeto que desenvolvi chamado Deep Space Store, é uma aplicação web que tem por objetivo proporcionar ao usuário um fluxo de checkout de um produto aleatório. Todo projeto foi desenvolvido de forma responsiva para melhor adaptação em diversos dispositivos. O Deep Space Store é uma ferramenta para o usuário selecionar um produto e posteriormente preencher seu dados de compra em 3 formulários. O projeto oferece uma interface amigável para visualizar detalhes sobre a compra, com seu nome, valor e descrição. Todos os formulários passam por uma validação em seus dados. As requisições são mockadas com a utilização do msw.',
+        techs: ['Vue.Js', 'SASS', 'Vite', 'Vuetify', 'VueRouter', 'Vuex', 'Msw', 'Webdriver', 'Cypress', 'Netlify'],
+        tipo: 'Aplicação web',
+        imagem: require('../assets/projetos/deep-space-store.png'),
+        link: 'https://deep-space-store.netlify.app/',
+        repositorio: 'https://github.com/fabioo-junioor/deep-space-store',
+        desenvolvimento: false
     }
 ]
 
