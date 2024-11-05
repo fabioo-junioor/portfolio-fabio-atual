@@ -20,14 +20,12 @@ const techs = [
 ]
 
 const botoes = [
-    //{ value: null, text: 'Selecionar', disabled:true },
-    { value: null, text: 'Todos' },
+    { value: null, text: 'Vue.Js' },
     { value: 'Wordpress', text: 'Wordpress' },
     { value: 'Elementor', text: 'Elementor' },
     { value: 'Woocommerce', text: 'Woocommerce' },
     { value: 'HTML5', text: 'HTML5' },
     { value: 'CSS3', text: 'CSS3' },
-    { value: 'Vue.Js', text: 'Vue.Js' },
     { value: 'JavaScript', text: 'JavaScript' },
     { value: 'Bootstrap', text: 'Bootstrap' },
     { value: 'BootstrapVue', text: 'BootstrapVue' },

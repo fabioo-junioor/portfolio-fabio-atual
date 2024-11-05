@@ -41,7 +41,6 @@ export default {
     flex-direction: column;
     align-items: center;
     padding: 5rem 0 0 0;
-    background-color: black;
     font-family: "Madimi One", sans-serif;
 
     .rodape-midias{
@@ -60,7 +59,7 @@ export default {
             
             span{
                 font-size: 2.5rem;
-                color: white;
+                color: #EEEEEE;
 
             }
             i{
@@ -99,13 +98,12 @@ export default {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        padding: 2rem 0;
-        background-color: black;
+        padding: 5rem 0 1rem 0;
 
         h4{
             text-align: center;
-            font-size: 1.3rem;
-            color: rgba(255, 255, 255, .8);
+            font-size: 1rem;
+            color: #EEEEEE;
             margin: 0 0 0 2rem;
 
         }
@@ -118,13 +116,13 @@ export default {
 
             span{
                 font-size: 1rem;
-                color: rgba(255, 255, 255, 0.8);
+                color: #EEEEEE;
                 margin: 0 0 0 .5rem;
 
             }
             i{
-                font-size: 1.5rem;
-                color: white;
+                font-size: 1.3rem;
+                color: #EEEEEE;
                 
             }
         }

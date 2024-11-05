@@ -1,7 +1,8 @@
-const projetos = [
+const listProjetos = [
     {
         id: 1,
         titulo: 'Alquimia Skate Shop',
+        descricao: 'Sem descrição!',
         techs: ['Wordpress', 'Elementor', 'Woocommerce', 'CSS3'],
         tipo: 'Ecommerce',
         imagem: require('../assets/projetos/alquimiaskateshop.png'),
@@ -11,6 +12,7 @@ const projetos = [
     {
         id: 2,
         titulo: 'Ecológica Junior',
+        descricao: 'Sem descrição!',
         techs: ['Wordpress', 'Elementor', 'CSS3'],
         tipo: 'Site Institucional',
         imagem: require('../assets/projetos/ecologicajr.png'),
@@ -20,6 +22,7 @@ const projetos = [
     {
         id: 3,
         titulo: 'F5 Junior',
+        descricao: 'Sem descrição!',
         techs: ['Wordpress', 'Elementor', 'CSS3'],
         tipo: 'Site Institucional',
         imagem: require('../assets/projetos/f5junior.png'),
@@ -29,6 +32,7 @@ const projetos = [
     {
         id: 4,
         titulo: 'Fejers',
+        descricao: 'Sem descrição!',
         techs: ['Wordpress', 'Elementor', 'CSS3'],
         tipo: 'Site Institucional',
         imagem: require('../assets/projetos/fejers.png'),
@@ -38,6 +42,7 @@ const projetos = [
     {
         id: 5,
         titulo: 'Nepelin',
+        descricao: 'Sem descrição!',
         techs: ['Wordpress', 'Elementor', 'CSS3'],
         tipo: 'Site Institucional',
         imagem: require('../assets/projetos/nepelin.png'),
@@ -47,6 +52,7 @@ const projetos = [
     {
         id: 6,
         titulo: 'Nucleo Impulso',
+        descricao: 'Sem descrição!',
         techs: ['Wordpress', 'Elementor', 'CSS3'],
         tipo: 'Site Institucional',
         imagem: require('../assets/projetos/nucleo-impulso-site.png'),
@@ -56,6 +62,7 @@ const projetos = [
     {
         id: 7,
         titulo: 'Patrimônio Dona Francisca',
+        descricao: 'Sem descrição!',
         techs: ['Wordpress', 'Elementor', 'JavaScript', 'CSS3'],
         tipo: 'Site Institucional',
         imagem: require('../assets/projetos/patrimonio-cultural-1.png'),
@@ -215,7 +222,18 @@ const projetos = [
         link: 'https://deep-space-store.netlify.app/',
         repositorio: 'https://github.com/fabioo-junioor/deep-space-store',
         desenvolvimento: false
+    },
+    {
+        id: 22,
+        titulo: 'Hora do Corte',
+        descricao: 'Sem descrição!',
+        techs: ['Vue.Js', 'SASS', 'Vite', 'Quasar', 'VueRouter', 'Vuex', 'Netlify'],
+        tipo: 'Aplicação web',
+        //imagem: require(''),
+        link: 'https://deep-space-store.netlify.app/',
+        //repositorio: 'https://github.com/fabioo-junioor/hora-do-corte-frontend',
+        desenvolvimento: true
     }
 ]
 
-export default projetos;
+export default listProjetos;

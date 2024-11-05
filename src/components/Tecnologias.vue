@@ -34,40 +34,35 @@ export default{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
+    justify-content: center;
     font-family: "Madimi One", sans-serif;
-    padding: 6rem 0;
+    min-height: 100vh;
 
     h3{
         font-size: 2rem;
         margin: 0 0 2rem 0;
-        padding: 1rem;
-        border-radius: 5px;
-        border: 2px solid #10e956;
-        background-color: rgb(40, 40, 40);
-        color: #10e956;
+        color: #EEEEEE;
 
     }
     div{
         display: grid;
         grid-template-columns: auto auto auto auto;
-        gap: .3rem;
+        gap: .5rem;
         align-content: center;
         justify-items: center;
-        width: 70%;
-        padding: .5rem;
+        width: 80%;
         border-radius: 5px;
-        background-color: #08832f;
 
         .tecnologia{
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 1.3rem 0;
+            padding: 2rem 0;
             width: 100%;
             height: 100%;
-            background-color: rgb(40, 40, 40);
-            color: white;
+            background-color: #31363F;
+            border: 1px solid #76ABAE;
+            color: #EEEEEE;
             border-radius: 5px;
 
             img{
@@ -75,7 +70,6 @@ export default{
 
             }
             h4{
-                padding: .3rem;
                 margin: 0;
                 font-size: 1.3rem;
 
@@ -107,6 +101,7 @@ export default{
 @media only screen and (max-width: 720px) {
     #tecnologias{
         div{
+            grid-template-columns: auto auto;
             width: 98%;
             padding: .3rem;
 
@@ -127,6 +122,8 @@ export default{
 }
 @media only screen and (max-width: 481px) {
     #tecnologias{
+        padding-top: 5rem;
+
         div{
             grid-template-columns: auto auto;
 
@@ -146,6 +143,11 @@ export default{
     }
 }
 @media only screen and (max-width: 360px) {
-  
+  #tecnologias{
+        div{
+            grid-template-columns: auto;
+
+        }
+    }
 }
 </style>

@@ -27,19 +27,14 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
 
 #menu {
-  width: 100%;
-  height: 10vh;
-  background-color: #10e956;
+  height: 5rem;
+  background-color: transparent;
   font-family: "Madimi One", sans-serif;
+  border-bottom: 1px solid #76ABAE;
 
   .navbar{
     height: 100%;
-    box-shadow: 0px 2px 10px rgba(255, 255, 255, .8);
-
-    .p-button{
-      margin: 0 0 .5rem 1rem;
-
-    }
+    
     .navbar-collapse{
       height: 100%;
 
@@ -55,14 +50,12 @@ export default {
           align-items: center;
 
           a{
-            padding: 1.5rem 1rem;
-            font-size: 1.5rem;
-            color: black;
+            font-size: 1.3rem;
+            color: #EEEEEE;
 
           }
           &:hover{
-            border-radius: 5px;
-            background-color: rgba(0, 0, 0, .2);
+            border-bottom: 1px solid #EEEEEE;
 
           }
         }
@@ -77,15 +70,18 @@ export default {
 }
 @media only screen and (max-width: 992px) {
   #menu {
-    height: auto;
-    position: absolute;
-
     .navbar{
+      .p-button{
+        margin: 1rem 0 0 1rem;
+        background-color: #EEEEEE;
+
+      }
       .navbar-collapse{
         .navbar-nav{
           .nav-item{
             margin: .5rem .3rem;
-            border: 1px solid #333;
+            padding: 1rem 0 1rem 1rem;
+            background-color: #31363F;
             border-radius: 5px;
 
           }

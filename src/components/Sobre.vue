@@ -47,12 +47,9 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
 
   #sobre {
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../assets/imagens/background1.jpg') no-repeat fixed center;
-    background-size: cover;
     display: flex;
     width: 100%;
-    height: 90vh;
-    padding: 6rem 0;
+    min-height: calc(100vh - 5rem);
     font-family: "Madimi One", sans-serif;
 
     .sobre-apresentacao{
@@ -63,7 +60,7 @@ export default {
       padding: 3rem;
 
       .sobre-nome{
-        color: white;
+        color: #EEEEEE;
         font-size: 3rem;
         display: flex;
         align-items: center;
@@ -74,15 +71,14 @@ export default {
         }
       }
       .sobre-titulo{
-        color: white;
+        color: #EEEEEE;
         font-size: 2rem;
-        border-bottom: 1px solid #10e956;
+        border-bottom: 1px solid #76ABAE;
 
       }
       .sobre-texto{
-        color: rgba(255, 255, 255, .8);
+        color: #EEEEEE;
         font-size: 1.3rem;
-        text-align: justify;
         padding: .5rem 0 0 0;
 
       }
@@ -96,10 +92,10 @@ export default {
 
           i{
             font-size: 2rem;
-            color: white;
+            color: #EEEEEE;
 
             &:hover{
-              color: #10e956;
+              color: #76ABAE;
 
             }                
           }
@@ -114,7 +110,7 @@ export default {
 
       .sobre-draw{
         border-radius: 5px;
-        box-shadow: 10px 10px 1px #10e956;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .4);
         width: 45%;
 
       }
@@ -195,6 +191,7 @@ export default {
     width: 100%;
     flex-direction: column;
     align-items: center;
+    padding: 1rem 0;
 
     .sobre-apresentacao{
       padding: 1rem;
