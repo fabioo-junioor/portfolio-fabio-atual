@@ -68,7 +68,7 @@ export default {
                     <button :disabled='!i?.repositorio'>Repositório</button>
                 </a>
                 <a :href="i?.link" target="_blank">
-                    <button :disabled='!!i?.desenvolvimento'>Visitar</button>
+                    <button :disabled='!i?.link'>Visitar</button>
                 </a>
             </div>
             <span
