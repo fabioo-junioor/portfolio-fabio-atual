@@ -227,7 +227,7 @@ const listProjetos = [
         id: 22,
         titulo: 'Hora do Corte',
         descricao: 'Este é um projeto que desenvolvi chamado Hora do Corte, é uma aplicação web que consome dados de uma API desenvolvida em Node.js e os exibe em um layout intuitivo e atraente criado em Vue.js. Todo projeto foi desenvolvido de forma responsiva para melhor adaptação em diversos dispositivos. A Hora do Corte é uma ferramenta que foi desenvolvida para proporcionar aos usuários reservarem horários em estabelecimento comercias como: salões de beleza e barbearias. Os estabelecimentos podem efetuar seu cadastro e disponibilizar informções pertinentes para que usuário possam reservar um horário. O usuário pode definir o "funcionário, serviço(os) e horário". ',
-        techs: ['HTML5', 'CSS3', 'JavaScript', 'Vue.Js', 'SASS', 'Vite', 'Quasar', 'VueRouter', 'Vuex', 'Netlify', 'Render'],
+        techs: ['HTML5', 'CSS3', 'JavaScript', 'Vue.Js', 'SASS', 'Vite', 'Quasar', 'VueRouter', 'Vuex', 'Node.Js', 'Netlify', 'Render'],
         tipo: 'Aplicação web',
         //imagem: require(''),
         link: 'https://horadocorte.netlify.app/',
