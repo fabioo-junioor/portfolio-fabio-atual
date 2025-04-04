@@ -52,6 +52,13 @@ export default {
         >
           <i class="pi pi-linkedin" title="Linkedin"></i>
         </a>
+        <a
+          href="http://lattes.cnpq.br/1398810150273129"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="pi pi-book" title="Curriculo lattes"></i>
+        </a>
       </div>
     </div>
     <div class="sobre-imagem">
