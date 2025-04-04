@@ -57,13 +57,10 @@ export default {
             class="project-cards_card">
             <h5>{{ i.titulo }}</h5>
             <p>{{ i.descricao }}</p>
-            <span
-                v-if="i.descricao != 'Sem descrição!'"
-                class="project-cards_card-info-desc">[Descrição Completa no Repositório]</span>
             <div class="project-cards_card-techs">
                 <span v-for="j in i.techs" :key="j">{{j}}</span>
             </div>
-            <div class="project-cards_card-acrions">
+            <div class="project-cards_card-actions">
                 <a :href="i?.repositorio" target="_blank">
                     <button :disabled='!i?.repositorio'>Repositório</button>
                 </a>
@@ -130,7 +127,7 @@ export default {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: 1.2rem;
 
         .project-cards_card{
             position: relative;
@@ -146,7 +143,7 @@ export default {
 
             h5, p{
                 color: #EEEEEE;
-            
+
             }
             p{
                 overflow: hidden;
@@ -159,6 +156,7 @@ export default {
             .project-cards_card-techs{
                 margin-bottom: 1rem;
                 display: flex;
+                justify-content: space-evenly;
                 flex-wrap: wrap;
                 gap: .5rem;
 
@@ -177,7 +175,7 @@ export default {
                     }
                 }
             }
-            .project-cards_card-acrions{
+            .project-cards_card-actions{
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
@@ -202,14 +200,6 @@ export default {
                     }
                 }
             }
-        }
-        .project-cards_card-info-desc{
-            position: absolute;
-            right: 5px;
-            top: 45%;
-            color: #EEEEEE;
-            font-size: .9rem;
-
         }
         .project-cards_card-info-dev{
             position: absolute;

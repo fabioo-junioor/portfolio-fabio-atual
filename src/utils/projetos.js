@@ -126,20 +126,9 @@ const listProjetos = [
     },
     {
         id: 13,
-        titulo: 'UniConecta',
-        descricao: 'Este projeto tem como objetivo ajudar na colaboração entre os estudantes da UFSM, através da criação e divulgação de unidades de estudo. Cada unidade de estudo pode compreender diferentes formas de atividades como: cursos, aulas, oficinas, etc, pois os mesmos estarão centralizados em um mesmo lugar. A plataforma está baseada em um sistema de troca que não envolve dinheiro real e sim moedas virtuais. A mesma também dispõe de alguns elementos de gamificação como: moedas virtuais, pontos e ranking, que têm como intuito proporcionar uma maior motivação aos usuários. O usuário que quiser compartilhar algum conhecimento específico, poderá cadastrar sua “unidade” na plataforma para que outros possam adquiri-la, o usuário definirá valor, duração descrição, título, etc.',
-        techs: ['HTML5', 'CSS3', 'JavaScript', 'Vue.Js', 'BootstrapVue', 'SASS', 'VueRouter', 'PHP', 'MySql', 'Netlify'],
-        tipo: 'Aplicação de Compartilhamento',
-        //imagem: require('../assets/projetos/uniconecta.png'),
-        link: 'https://uniconecta.netlify.app/',
-        repositorio: 'https://github.com/fabioo-junioor/uniConecta',
-        desenvolvimento: false
-    },
-    {
-        id: 14,
         titulo: 'Portfólio 2024',
         descricao: 'Este é um projeto que desenvolvi para servir como portfólio pessoal, se trata de uma aplicação web com um layout intuitivo e atraente que foi desenvolvido de forma responsiva para melhor adaptação em diversos dispositivos. O desenvolvimento do mesmo teve o ituito de praticar funcionalidade e habilidades frontend.',
-        techs: ['HTML5', 'CSS3', 'JavaScript', 'Vue.Js', 'BootstrapVue', 'PrimeVue', 'SASS', 'Vite', 'Netlify'],
+        techs: ['HTML5', 'CSS3', 'JavaScript', 'Vue.Js', 'BootstrapVue', 'PrimeVue', 'SASS', 'Netlify'],
         tipo: 'Site Pessoal',
         //imagem: require('../assets/projetos/portfolio2024.png'),
         link: 'https://fabiojuniordev.netlify.app/',
@@ -147,10 +136,21 @@ const listProjetos = [
         desenvolvimento: false
     },
     {
+        id: 14,
+        titulo: 'UniConecta',
+        descricao: 'Este projeto tem como objetivo ajudar na colaboração entre os estudantes da UFSM, através da criação e divulgação de unidades de estudo. Cada unidade de estudo pode compreender diferentes formas de atividades como: cursos, aulas, oficinas, etc, pois os mesmos estarão centralizados em um mesmo lugar. A plataforma está baseada em um sistema de troca que não envolve dinheiro real e sim moedas virtuais. A mesma também dispõe de alguns elementos de gamificação como: moedas virtuais, pontos e ranking, que têm como intuito proporcionar uma maior motivação aos usuários. O usuário que quiser compartilhar algum conhecimento específico, poderá cadastrar sua “unidade” na plataforma para que outros possam adquiri-la, o usuário definirá valor, duração descrição, título, etc.',
+        techs: ['HTML5', 'CSS3', 'JavaScript', 'Vue.Js', 'BootstrapVue', 'SASS', 'VueRouter', 'Bcryptjs', 'PHP', 'MySql', 'Netlify'],
+        tipo: 'Aplicação Web',
+        //imagem: require('../assets/projetos/uniconecta.png'),
+        link: 'https://uniconecta.netlify.app/',
+        repositorio: 'https://github.com/fabioo-junioor/uniConecta',
+        desenvolvimento: false
+    },
+    {
         id: 15,
         titulo: 'Pokedex',
         descricao: 'Este é um projeto que desenvolvi chamado Pokédex, é uma aplicação web que consome dados de uma API e os exibe em um layout intuitivo e atraente. Todo projeto foi desenvolvido de forma responsiva para melhor adaptação em diversos dispositivos. A Pokédex é uma ferramenta para explorar e descobrir informações sobre diferentes espécies de Pokémon. Utilizando a API pública chamada pokéApi, o projeto oferece uma interface amigável para visualizar detalhes sobre os Pokémon, como suas estatísticas, habilidades e tipos.',
-        techs: ['HTML5', 'CSS3', 'JavaScript', 'Vue.Js', 'PrimeVue', 'SASS', 'Vite', 'PokeApi', 'Netlify'],
+        techs: ['HTML5', 'CSS3', 'JavaScript', 'Vue.Js', 'PrimeVue', 'SASS', 'PokeApi', 'Netlify'],
         tipo: 'Aplicação Web',
         //imagem: require('../assets/projetos/pokedex.png'),
         link: 'https://pokkkedex.netlify.app/',
@@ -194,7 +194,7 @@ const listProjetos = [
         id: 19,
         titulo: 'Mesa Online',
         descricao: 'Este é um projeto que desenvolvi chamado Mesa Online, é uma aplicação web que consome dados de uma API desenvolvida em PHP e os exibe em um layout intuitivo e atraente criado em VueJs. Todo projeto foi desenvolvido de forma responsiva para melhor adaptação em diversos dispositivos. A Mesa Online é uma ferramenta que foi desenvolvida para proporcionar aos usuários reservarem lugares em estabelecimento comercias como: restaurantes, pubs, bares, etc. Os estabelecimentos podem efetuar seu cadastro e disponibilizar informções pertinentes para que usuário possam reservar um os mais lugares com rapidez sem a necessidade de esperar o retorno de um funcionário.',
-        techs: ['HTML5', 'CSS3', 'JavaScript', 'Vue.Js', 'SASS', 'Quasar', 'VueRouter', 'Node.Js', 'MySql', 'Vite', 'Netlify'],
+        techs: ['HTML5', 'CSS3', 'JavaScript', 'Vue.Js', 'SASS', 'Quasar', 'VueRouter', 'Vuex', 'Chart.Js', 'Node.Js', 'Express.Js', 'Jwt', 'MySql', 'Netlify'],
         tipo: 'Aplicação Web',
         //imagem: require('../assets/projetos/mesa-online.png'),
         link: 'https://mesaonline.netlify.app/',
@@ -205,7 +205,7 @@ const listProjetos = [
         id: 20,
         titulo: 'Facemash',
         descricao: 'Este é um projeto que desenvolvi chamado Facemash, é uma aplicação web que consome dados de uma API e os exibe em um layout intuitivo e atraente. Todo projeto foi desenvolvido de forma responsiva para melhor adaptação em diversos dispositivos. O Facemash é uma ferramenta para o usuário votar no seu personagem favorito da saga Harry Potter. Utilizando a API pública chamada potterDB, o projeto oferece uma interface amigável para visualizar detalhes sobre os personagens, com seu nome e espécie. Cada voto é computado e salvo em um banco de dados no firebase.',
-        techs: ['HTML5', 'CSS3', 'JavaScript', 'Vue.Js', 'SASS', 'Vite', 'Firebase', 'Netlify'],
+        techs: ['HTML5', 'CSS3', 'JavaScript', 'Vue.Js', 'SASS', 'Firebase', 'Netlify'],
         tipo: 'Aplicação web',
         //imagem: require('../assets/projetos/facemash.png'),
         link: 'https://ffacemash.netlify.app/',
@@ -216,7 +216,7 @@ const listProjetos = [
         id: 21,
         titulo: 'Deep Space Store',
         descricao: 'Este é um projeto que desenvolvi chamado Deep Space Store, é uma aplicação web que tem por objetivo proporcionar ao usuário um fluxo de checkout de um produto aleatório. Todo projeto foi desenvolvido de forma responsiva para melhor adaptação em diversos dispositivos. O Deep Space Store é uma ferramenta para o usuário selecionar um produto e posteriormente preencher seu dados de compra em 3 formulários. O projeto oferece uma interface amigável para visualizar detalhes sobre a compra, com seu nome, valor e descrição. Todos os formulários passam por uma validação em seus dados. As requisições são mockadas com a utilização do msw.',
-        techs: ['HTML5', 'CSS3', 'JavaScript', 'Vue.Js', 'SASS', 'Vite', 'Vuetify', 'VueRouter', 'Vuex', 'Msw', 'Webdriver', 'Cypress', 'Netlify'],
+        techs: ['HTML5', 'CSS3', 'JavaScript', 'Vue.Js', 'SASS', 'Vuetify', 'VueRouter', 'Vuex', 'Msw', 'Webdriver', 'Cypress', 'Netlify'],
         tipo: 'Aplicação web',
         //imagem: require('../assets/projetos/deep-space-store.png'),
         link: 'https://deep-space-store.netlify.app/',
@@ -227,13 +227,24 @@ const listProjetos = [
         id: 22,
         titulo: 'Hora do Corte',
         descricao: 'Este é um projeto que desenvolvi chamado Hora do Corte, é uma aplicação web que consome dados de uma API desenvolvida em Node.js e os exibe em um layout intuitivo e atraente criado em Vue.js. Todo projeto foi desenvolvido de forma responsiva para melhor adaptação em diversos dispositivos. A Hora do Corte é uma ferramenta que foi desenvolvida para proporcionar aos usuários reservarem horários em estabelecimento comercias como: salões de beleza e barbearias. Os estabelecimentos podem efetuar seu cadastro e disponibilizar informções pertinentes para que usuário possam reservar um horário. O usuário pode definir o "funcionário, serviço(os) e horário". ',
-        techs: ['HTML5', 'CSS3', 'JavaScript', 'Vue.Js', 'SASS', 'Vite', 'Quasar', 'VueRouter', 'Vuex', 'Node.Js', 'Netlify', 'Render'],
+        techs: ['HTML5', 'CSS3', 'JavaScript', 'Vue.Js', 'SASS', 'Quasar', 'VueRouter', 'Vuex', 'Chart.Js', 'Node.Js', 'Express.Js', 'Jwt', 'MySql', 'Netlify', 'Render'],
         tipo: 'Aplicação web',
         //imagem: require(''),
         link: 'https://horadocorte.netlify.app/',
         repositorio: 'https://github.com/fabioo-junioor/hora-do-corte-frontend',
+        desenvolvimento: false
+    },
+    {
+        id: 23,
+        titulo: 'TrackEase',
+        descricao: 'Sem descrição!',
+        techs: ['HTML5', 'CSS3', 'JavaScript', 'Vue.Js', 'SASS', 'Quasar', 'VueRouter', 'Vuex', 'Chart.Js', 'Node.Js', 'Express.Js', 'Jwt', 'MySql', 'Netlify', 'Render'],
+        tipo: 'Aplicação web/Framework',
+        //imagem: require(''),
+        link: '',
+        repositorio: '',
         desenvolvimento: true
     }
-]
+];
 
 export default listProjetos;
