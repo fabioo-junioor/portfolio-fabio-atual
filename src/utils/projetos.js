@@ -238,10 +238,10 @@ const listProjetos = [
         id: 23,
         titulo: 'TrackEase',
         descricao: 'Sem descrição!',
-        techs: ['HTML5', 'CSS3', 'JavaScript', 'Vue.Js', 'SASS', 'Quasar', 'VueRouter', 'Vuex', 'Chart.Js', 'Node.Js', 'Express.Js', 'Jwt', 'MySql', 'Netlify', 'Render'],
+        techs: ['HTML5', 'CSS3', 'JavaScript', 'Vue.Js', 'SASS', 'Quasar', 'VueRouter', 'Vuex', 'Chart.Js', 'Node.Js', 'Express.Js', 'Jwt', 'MySql', 'Netlify', 'Render', 'Aiven'],
         tipo: 'Aplicação web/Framework',
         //imagem: require(''),
-        link: '',
+        link: 'https://track-ease.netlify.app/',
         repositorio: '',
         desenvolvimento: true
     }
