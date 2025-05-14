@@ -224,6 +224,16 @@ const listProjetos = [
     },
     {
         id: 24,
+        titulo: 'Landing Page Finance',
+        descricao: 'Sem descrição',
+        techs: ['HTML5', 'CSS3', 'JavaScript', 'Vue.Js', 'Quasar', 'Netlify'],
+        tipo: 'Página Web',
+        link: 'https://eclipse-finance.netlify.app/',
+        repositorio: 'https://github.com/fabioo-junioor/landig-page-finance-app',
+        desenvolvimento: true
+    },
+    {
+        id: 25,
         titulo: 'Contagem Regressiva GTA 6',
         descricao: 'Este é um projeto de página promocional estática desenvolvida para destacar o lançamento do aguardado jogo GTA 6. Criado com foco em uma apresentação visual atrativa e responsiva, o site traz informação do tempo restante para o lançamento do jogo, servindo como uma central de divulgação para fãs e curiosos.',
         techs: ['HTML5', 'CSS3', 'JavaScript', 'Netlify'],
