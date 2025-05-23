@@ -46,7 +46,6 @@ const botoes = [
     { value: 'MySql', text: 'MySql' },
     { value: 'Electron', text: 'Electron' },
     { value: 'Firebase', text: 'Firebase' },
-    { value: 'Express.Js', text: 'Express.Js' },
     { value: 'Figma', text: 'Figma' },
     { value: 'Netlify', text: 'Netlify' },
     { value: 'Render', text: 'Render' },
