@@ -216,7 +216,7 @@ const listProjetos = [
         id: 23,
         titulo: 'TrackEase',
         descricao: 'Este é um projeto que desenvolvi chamado TrackEase, é uma aplicação web que consome dados de uma API desenvolvida em Node.js e os exibe em um layout intuitivo e atraente criado em Vue.js. Todo projeto foi desenvolvido de forma responsiva para melhor adaptação em diversos dispositivos. O TrackEase é uma aplicação/framework que foi desenvolvida para proporcionar ao usuário/desenvolvendor monitorar as métricas de usabilidade de seus projetos. Essas métricas são capturadas através de eventos gerados pelo usuário, com a interação do mesmo com a interfaces web.',
-        techs: ['HTML5', 'CSS3', 'JavaScript', 'Vue.Js', 'SASS', 'Quasar', 'VueRouter', 'Vuex', 'Chart.Js', 'Node.Js', 'Express.Js', 'Jwt', 'MySql', 'Netlify', 'Render', 'Aiven'],
+        techs: ['HTML5', 'CSS3', 'JavaScript', 'Vue.Js', 'SASS', 'Quasar', 'VueRouter', 'Vuex', 'Chart.Js', 'Node.Js', 'Express.Js', 'Jwt', 'MySql', 'Cypress', 'Netlify', 'Render', 'Aiven'],
         tipo: 'Aplicação Web/Framework',
         link: 'https://track-ease.netlify.app/',
         repositorio: 'https://github.com/fabioo-junioor/track-ease-frontend',
