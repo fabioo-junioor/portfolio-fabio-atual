@@ -14,6 +14,9 @@ import 'primeicons/primeicons.css'
 /* BootstrapVue */
 import { BootstrapVue } from 'bootstrap-vue'
 
+/* TrackEase */
+import '../config.track.js';
+
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
