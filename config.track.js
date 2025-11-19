@@ -1,4 +1,4 @@
-const token = import.meta.env.VITE_TOKEN_TRACK;
+const token = 'm12XACF$Dc98OAhA6iES9b6MDZR3vulu';
 const url = 'https://track-ease-backend.onrender.com/api/';
 
 const sendTrackData = async (data) => {
